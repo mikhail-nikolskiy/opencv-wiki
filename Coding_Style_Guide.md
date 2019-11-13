@@ -183,7 +183,7 @@ To achieve these goals we create separate interface and implementation. Interfac
 
 - As long as the public interface is not modified, changes are fine.
 - If public interface should be changed, but it was not included in any official public release yet, changes are fine.
-- If public interface should be changed and it have been release it should be done in a way preserving source compatibility. If it is not possible, new interface should be created:
+- If you want to expose a new extended algorithm, it should be done in a way to preserve the source-level compatibility. Create a new interface on top of the existing one, and provide another `create` function to instantiate your algorithm:
 
   ```.cpp
   namespace cv {
@@ -195,6 +195,7 @@ To achieve these goals we create separate interface and implementation. Interfac
       // more properties ...
       virtual void setNPyramidLevels(int nlevels) = 0;
       virtual double getNPyramidLevels() const = 0;
+      // create your algorithm; the implementation is completely hidden, as usual
       static Ptr<MyPyrStereoMatcher> create( ... );
   };
 
