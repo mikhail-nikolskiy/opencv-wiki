@@ -2,6 +2,7 @@
 This page is just links to each year's OpenCV GSoC page
 
 ## Idea Page for Each Year:
+* [[2020|GSoC_2020]]
 * [[2019|GSoC_2019]]
 * [[2018|GSoC_2018]]
 * [[2017|GSoC_2017]]
