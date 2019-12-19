@@ -30,6 +30,6 @@
         - [[Writing performance tests|HowToWritePerfTests]]
         - [[CI configuration|CI-configuration]]
 - [[OpenCV GSoC | OpenCV_GSoC]]
-    - [[2019 Ideas List|GSoC_2019]]
+    - [[2020 Ideas List|GSoC_2020]]
     - [[Our Application|OpenCV_GSoC_Application]]
 - [[Archive]]
