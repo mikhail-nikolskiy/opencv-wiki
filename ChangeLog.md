@@ -2,6 +2,85 @@ OpenCV Change Logs
 ==================
 
 
+version:4.2.0
+-------------
+
+*December, 2019*
+
+New Year's update for OpenCV 4.x has been released.
+
+Highlights of this release:
+
+![](images/dnn.png)
+
+- DNN module:
+
+    - Integrated GSoC project with CUDA backend: [#14827](https://github.com/opencv/opencv/pull/14827)
+
+    - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+      - support for nGraph OpenVINO API (preview / experimental): [#15537](https://github.com/opencv/opencv/pull/15537)
+
+
+![](images/speed.jpg)
+
+- Performance improvements:
+
+    - SIMD intrinsics: `StereoBM`/`StereoSGBM` algorithms, `resize`, `integral`, `flip`, `accumulate` with mask, `HOG`, `demosaic`, `moments`
+    - Muti-threading: `pyrDown`
+
+
+![](images/github2.png)
+
+- And many other great patches from OpenCV community:
+
+    - VideoCapture: video stream extraction (demuxing) through FFmpeg backend
+    - VideoCapture: waitAny() API for camera input multiplexing (Video4Linux through poll() calls)
+
+    - (opencv_contrib): new algorithm Rapid Frequency Selective Reconstruction (FSR) added: [#2296](https://github.com/opencv/opencv_contrib/pull/2296) + [tutorial](https://docs.opencv.org/4.2.0/dc/d2f/tutorial_xphoto_inpainting.html)
+    - (opencv_contrib): Add RIC method for sparse match interpolation [#2367](https://github.com/opencv/opencv_contrib/pull/2367)
+    - (opencv_contrib): Add LOGOS features matching strategy [#2383](https://github.com/opencv/opencv_contrib/pull/2383)
+
+
+- Breaking changes:
+
+    - Implementation of Thread Local Storage (TLS) has been improved to release data from terminated threads. API has been changed.
+    - Don't define unsafe CV_XADD implementation by default
+    - Python conversion rules of passed arguments will be updated in next releases: [#15915](https://github.com/opencv/opencv/pull/15915)
+
+
+### Contributors
+
+<details>
+<summary>opencv (XXXXX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.1.2..4.2.0
+TBD
+```
+
+</details>
+
+<details>
+<summary>opencv_contrib (XXXXX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.1.2..4.2.0
+TBD
+```
+
+</details>
+
+
+
+version:3.4.9
+-------------
+
+*December, 2019*
+
+OpenCV 3.4.9 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.2.0.
+
+
+
 version:4.1.2
 -------------
 
@@ -44,7 +123,7 @@ Highlights of this release:
     - GSoC: Add learning-based super-resolution module: https://github.com/opencv/opencv_contrib/pull/2229 and https://github.com/opencv/opencv_contrib/pull/2231
     - Detection accuracy improvement of the white marker aruco corners: https://github.com/opencv/opencv_contrib/pull/2236
     - Added pattern generator tool for aruco: https://github.com/opencv/opencv_contrib/pull/2250
-    - and special thanks to [@sturkmen72](http://github.com/sturkmen72) for improvind and cleaning up code of samples/tutorials
+    - and special thanks to [@sturkmen72](http://github.com/sturkmen72) for improving and cleaning up code of samples/tutorials
 
 - Breaking changes:
 
