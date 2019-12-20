@@ -34,3 +34,4 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * [OE-27 - Wide Universal Intrinsics](OE-27.-Wide-Universal-Intrinsics)
 * [[OE-28 - Image Stitching|OE-28.-Image Stitching]]
 * [[OE-29 - Adding AVX512 Support|OE-29.-Adding AVX512 Support]]
+* [[OE-30 - Color Calibration|OE-30.-Color-Calibration]]
