@@ -27,7 +27,7 @@ Highlights of this release:
 - Performance improvements:
 
     - SIMD intrinsics: `StereoBM`/`StereoSGBM` algorithms, `resize`, `integral`, `flip`, `accumulate` with mask, `HOG`, `demosaic`, `moments`
-    
+
     - Muti-threading: `pyrDown`
 
 
@@ -59,21 +59,125 @@ Highlights of this release:
 ### Contributors
 
 <details>
-<summary>opencv (XXXXX contributors)</summary>
+<summary>opencv (80 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.1.2..4.2.0
-TBD
+    77  Alexander Alekhin
+    12  Dmitry Kurtaev
+     7  Dmitry Matveev
+     7  Maksim Shabunin
+     5  Chip Kerchner
+     5  Yashas Samaga B L
+     5  atalaman
+     4  Anna Khakimova
+     4  Steve Nicholson
+     4  Vitaly Tuzov
+     4  YashasSamaga
+     4  cudawarped
+     3  Igor Murzov
+     3  Liubov Batanina
+     3  Lubov Batanina
+     3  Oleg Alexandrov
+     3  TH3CHARLie
+     2  Brian Wignall
+     2  ChipKerchner
+     2  Everton Constantino
+     2  Nikita Shulga
+     2  Orest Chura
+     2  OrestChura
+     2  Paul Murphy
+     2  Pinaev Danil
+     2  RAJKIRAN NATARAJAN
+     2  Ruslan Garnov
+     2  Sajarin
+     2  Sebastián Gurin
+     2  Vadim Levin
+     2  berak
+     2  shimat
+     1  Adam Gyarmati
+     1  Adam Rankin
+     1  Alexander Smorkalov
+     1  André Lippok
+     1  Anton Potapov
+     1  CJ Smith
+     1  Christoph Bachhuber
+     1  Ciprian Alexandru Pitis
+     1  Collin Brake
+     1  Diego
+     1  Dimitri Gerin
+     1  Dizhenin Vlad
+     1  Dmitry Budnikov
+     1  Fei Wu
+     1  Gael Colas
+     1  Giles Payne
+     1  JamesNewton
+     1  Lorenzo Lucignano
+     1  Manjunath Bhat
+     1  Maxim Pashchenkov
+     1  Natsu
+     1  Paul E. Murphy
+     1  Pavel Grunt
+     1  Pádraig Brady
+     1  Rajkiran Natarajan
+     1  SSE4
+     1  Sebastien Wybo
+     1  Sebastián Gurín
+     1  Talamanov, Anatoliy
+     1  Tatsuro Shibamura
+     1  Xuanda Yang
+     1  Yashas
+     1  antalzsiroscandid
+     1  anton-potapov
+     1  catree
+     1  clunietp
+     1  collin
+     1  collinbrake
+     1  czgdp1807
+     1  float13
+     1  jasjuang
+     1  jeffeDurand
+     1  mcellis33
+     1  nick black
+     1  sajarindider
+     1  thebhatman
+     1  ysy
+     1  yuriyluxriot
 ```
 
 </details>
 
 <details>
-<summary>opencv_contrib (XXXXX contributors)</summary>
+<summary>opencv_contrib (26 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.1.2..4.2.0
-TBD
+    10  Alexander Alekhin
+     7  Pavel Rojtberg
+     4  cudawarped
+     3  Suleyman TURKMEN
+     2  Brian Wignall
+     2  Gagandeep Singh
+     2  Lizeth Huertas
+     2  Pavel Grunt
+     2  catree
+     2  czgdp1807
+     1  Adam Rankin
+     1  Apoorv Goel
+     1  Deni
+     1  Gael Colas
+     1  Josh Chien
+     1  LE GARREC Vincent
+     1  Nikita Shulga
+     1  RAJKIRAN NATARAJAN
+     1  Steve Nicholson
+     1  Tobias Senst
+     1  ab-dragon
+     1  anna
+     1  huangqinjin
+     1  jeffeDurand
+     1  kokerf
+     1  si40wiga
 ```
 
 </details>
