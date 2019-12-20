@@ -18,6 +18,7 @@ Highlights of this release:
     - Integrated GSoC project with CUDA backend: [#14827](https://github.com/opencv/opencv/pull/14827)
 
     - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+
       - support for nGraph OpenVINO API (preview / experimental): [#15537](https://github.com/opencv/opencv/pull/15537)
 
 
@@ -26,6 +27,7 @@ Highlights of this release:
 - Performance improvements:
 
     - SIMD intrinsics: `StereoBM`/`StereoSGBM` algorithms, `resize`, `integral`, `flip`, `accumulate` with mask, `HOG`, `demosaic`, `moments`
+    
     - Muti-threading: `pyrDown`
 
 
@@ -33,19 +35,25 @@ Highlights of this release:
 
 - And many other great patches from OpenCV community:
 
-    - VideoCapture: video stream extraction (demuxing) through FFmpeg backend
-    - VideoCapture: waitAny() API for camera input multiplexing (Video4Linux through poll() calls)
+    - VideoCapture: video stream extraction (demuxing) through FFmpeg backend.
 
-    - (opencv_contrib): new algorithm Rapid Frequency Selective Reconstruction (FSR) added: [#2296](https://github.com/opencv/opencv_contrib/pull/2296) + [tutorial](https://docs.opencv.org/4.2.0/dc/d2f/tutorial_xphoto_inpainting.html)
-    - (opencv_contrib): Add RIC method for sparse match interpolation [#2367](https://github.com/opencv/opencv_contrib/pull/2367)
-    - (opencv_contrib): Add LOGOS features matching strategy [#2383](https://github.com/opencv/opencv_contrib/pull/2383)
+    - VideoCapture: `waitAny()` API for camera input multiplexing (Video4Linux through poll() calls).
 
+    - (opencv_contrib) new algorithm Rapid Frequency Selective Reconstruction (FSR): [#2296](https://github.com/opencv/opencv_contrib/pull/2296) + [tutorial](https://docs.opencv.org/4.2.0/dc/d2f/tutorial_xphoto_inpainting.html).
+
+    - (opencv_contrib) RIC method for sparse match interpolation: [#2367](https://github.com/opencv/opencv_contrib/pull/2367).
+
+    - (opencv_contrib) LOGOS features matching strategy: [#2383](https://github.com/opencv/opencv_contrib/pull/2383).
 
 - Breaking changes:
 
+    - Disabled constructors for legacy C API structures.
+
     - Implementation of Thread Local Storage (TLS) has been improved to release data from terminated threads. API has been changed.
-    - Don't define unsafe CV_XADD implementation by default
-    - Python conversion rules of passed arguments will be updated in next releases: [#15915](https://github.com/opencv/opencv/pull/15915)
+
+    - Don't define unsafe CV_XADD implementation by default.
+
+    - Python conversion rules of passed arguments will be updated in next releases: [#15915](https://github.com/opencv/opencv/pull/15915).
 
 
 ### Contributors
