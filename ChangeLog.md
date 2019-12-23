@@ -21,6 +21,17 @@ Highlights of this release:
 
       - support for nGraph OpenVINO API (preview / experimental): [#15537](https://github.com/opencv/opencv/pull/15537)
 
+![](images/gapi.png)
+
+- G-API module:
+
+    - Enabled in-graph inference: [#15090](https://github.com/opencv/opencv/pull/15090). Now G-API can express more complex hybrid CV/DL algorithms
+
+      - Intel® Inference Engine backend is the only available now, support for DNN module will be added in the future releases.
+
+    - Extended execution model with streaming support: [#15216](https://github.com/opencv/opencv/pull/15216). Decoding, image processing, inference, and post-processing are now pipelined efficiently when processing a video stream with G-API.
+
+    - Added tutorials covering these new features: [Face analytics pipeline](https://docs.opencv.org/4.2.0/d8/d24/tutorial_gapi_interactive_face_detection.html) and a sample [Face beautification algorithm](https://docs.opencv.org/4.2.0/d8/d24/tutorial_gapi_interactive_face_detection.html).
 
 ![](images/speed.jpg)
 
