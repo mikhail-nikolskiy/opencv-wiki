@@ -14,11 +14,11 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * [OE-3 - OpenCV 3.x Maintainance](OE-3.-OpenCV-3)
 * [OE-4 - OpenCV 4.0](OE-4.-OpenCV-4)
 * OE-5 to OE-9 are reserved for OpenCV 5.0 to 9.0
-* (DONE)~~[OE-10 - FP16 Support](OE-10.-FP16)~~
+* (DONE) ~~[OE-10 - FP16 Support](OE-10.-FP16)~~
 * [OE-11 - Add Logging](OE-11.-Logging)
 * [OE-12 - Bring Lapack back](OE-12.-Lapack)
-* (DONE)~~[OE-13 - ONNX Importer in DNN](OE-13.-DNN-ONNX-Importer)~~
-* (DONE)~~[OE-14 - FP16 Path in DNN](OE-14.-DNN-FP16)~~
+* (DONE) ~~[OE-13 - ONNX Importer in DNN](OE-13.-DNN-ONNX-Importer)~~
+* (DONE) ~~[OE-14 - FP16 Path in DNN](OE-14.-DNN-FP16)~~
 * [OE-15 - Bit-Exactness](OE-15.-Bit-Exactness)
 * [OE-16 - Mini-Halide in OpenCV](OE-16.-Mini-Halide)
 * [OE-17 - New Filter Engine](OE-17.-New-Filter-Engine)
@@ -27,12 +27,12 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * [OE-20 - Calibration Module](OE-20.-Module-Calibration)
 * [OE-21 - Tracking Module](OE-21.-Module-Tracking)
 * [OE-22 - Point Cloud Module](OE-22.-Module-Point-Cloud)
-* (DONE)~~[OE-23 - Graph API Module](OE-23.-Module-GAPI)~~
+* (DONE) ~~[OE-23 - Graph API Module](OE-23.-Module-GAPI)~~
 * [OE-24 - Revised HighGUI Module](OE-24.-Module-HighGUI)
 * [OE-25 - H/W Accelerated Video I/O](OE-25.-Fast-VideoIO)
 * [OE-26 - Revise Samples](OE-26.-Samples)
-* (DONE)~~[OE-27 - Wide Universal Intrinsics](OE-27.-Wide-Universal-Intrinsics)~~
+* (DONE) ~~[OE-27 - Wide Universal Intrinsics](OE-27.-Wide-Universal-Intrinsics)~~
 * [[OE-28 - Image Stitching|OE-28.-Image Stitching]]
-* (DONE)~~[[OE-29 - Adding AVX512 Support|OE-29.-Adding AVX512 Support]]~~
+* (DONE) ~~[[OE-29 - Adding AVX512 Support|OE-29.-Adding AVX512 Support]]~~
 * [[OE-30 - Color Calibration|OE-30.-Color-Calibration]]
 * [[OE-31 - Julia Bindings|OE-31.-Julia-Bindings]]
