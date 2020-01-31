@@ -6,7 +6,7 @@ The document is a short guide on code style, used in OpenCV. The core libraries 
 General Comments about Writing OpenCV code
 ------------------------------------------
 
--  The code should be written C++ 11. When the patch is prepared for OpenCV 2.4 or 3.4, use C++ 98.
+-  The code should be written C++ 11. When the patch is prepared for OpenCV 2.4.x or 3.4.x, use C++ 98.
 -  The code should be cross-platform. Try to minimize or eliminate completely platform-specific details, especially in the header files.
 -  If your patch for OpenCV is based on some source code from Internet, please, pay attention to and respect the license. In particular, check that it's not GPL or LGPL. Check that it's not "for research purpose only" license. Check that the source code, supplied documentation, README, or the referenced papers with algorithm description do not mention any patents.
 -  If your patch modifies existing files, please, try to minimize your patch as much as possible. Do not reformat existing code, do not do other stylistic changes. If the intent is to fix a bug or add a new small feature, just do exactly that.
