@@ -31,4 +31,4 @@ Materials
 
 * A [tutorial](https://docs.opencv.org/4.0.0/df/d7e/tutorial_table_of_content_gapi.html) and some [documentation chapters](https://docs.opencv.org/4.0.0/d0/d1e/gapi.html) are already available!
 
-* Check out [these slides](files/2018-12-24-GAPI_Overview.pdf) as a compact introduction to G-API.
+* Check out [these slides](files/2020-02-03-GAPI_Overview.pdf) as a compact introduction to G-API.
