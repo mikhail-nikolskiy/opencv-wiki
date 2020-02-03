@@ -56,7 +56,7 @@ Highlights of this release:
 
     - (opencv_contrib) LOGOS features matching strategy: [#2383](https://github.com/opencv/opencv_contrib/pull/2383).
 
-- Breaking changes:
+- Changes that can potentially break compatibility:
 
     - Disabled constructors for legacy C API structures.
 
