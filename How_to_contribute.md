@@ -44,8 +44,8 @@ Before you open up anything on the OpenCV GitHub page, be sure that you are at t
 9.  When you are done, push your branch to your GitHub fork; then create a pull request from your branch to the base branch (see https://help.github.com/articles/using-pull-requests for details).
 
 
-Making a good pull request
---------------------------
+Good pull request checklist
+---------------------------
 
 Following these guidelines will increase the likelihood of your pull request being accepted:
 
