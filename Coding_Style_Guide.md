@@ -111,7 +111,7 @@ For the example of function and class declarations, take a look at the [core.hpp
 In 2.4 we introduced new "proxy" datatypes in OpenCV to support multiple array types simultaneously. For example, in some cases it is more convenient to represent a point set as `vector<Point3f>`, in other cases - as a matrix. In some cases it is more convenient to store homography matrix as `Mat`, in other - as `Matx33f`. If a parameter of your function has type `Mat`, `Matx<>`, `vector<Point...>`, `vector<Mat>` or `vector<vector<Point...>>`, please consider using `InputArray`, `OutputArray` and other wrapping types.
 
 -   `InputArray` - used for input arrays; you can only read from the arrays and do not modify or reallocate them. For example, parameter of `cv::determinant()` function is `InputArray`.
--   `InputOutputArray` - used for both input/output arrays, i.e. arrays which are modified inside the functions. For example, in all drawing functions, like `cv::line` and `cv::drawContours` accept the image as a `InputOutputArray` type.
+-   `InputOutputArray` - used for both input/output arrays, i.e. arrays which are modified inside the functions. For example, all the drawing functions, such as `cv::line`, `cv::drawContours` etc. accept the image as a `InputOutputArray` type.
 -   `OutputArray` - used for output arrays. The function can not assume that the array has the proper size and type, or that its content is somehow initialized. Instead, it should call `OutputArray::create()` method to allocate required data buffer if needed. You can also call `create()` on input/output arrays, but normally you do not have to.
 
 These types are called proxy classes because they are not real arrays. They just store pointers to the actual arrays and the "kind" of array (`Mat`, `Matx`, `vector<>` etc.). So when you see some function that takes such a parameter, it means that it can take `Mat`, `Matx` or `vector<>`. Since those Array types are proxy classes, you **should not** declare local variables of those types unless you are an expert in C++ and know exactly what you are doing.
@@ -134,10 +134,10 @@ If you decide to make your algorithm a class, you should follow OpenCV Algorithm
 -   We want our API to stay stable when the implementation changes.
 -   We want to preserve source-level compatibility. Binary-level compatibility should be preserved between patch releases.
 -   We want to keep header files clean to make tracking API changes easier.
--   We want to keep our tools that parse OpenCV headers simple and robust (binding generators).
+-   We want to keep our tools that parse OpenCV headers simple and robust (bindings generators).
 -   We want OpenCV to build fast.
 
-To achieve these goals we create separate interface and implementation. Interfaces are classes without constructors, without data members and with only pure virtual methods. Implementation derives from interface and is hidden from library user. Construction of an object is performed by a factory method or a function which should return class instance wrapped into smart pointer (`cv::Ptr<>`).
+To achieve these goals we create separate interface and implementation classes. Interfaces are classes without constructors, without data members and with only purely virtual methods. Implementation derives from interface and is hidden from library user. Construction of an object is performed by a factory method or a function which should return class instance wrapped into a smart pointer (`cv::Ptr<>`).
 
 ### Steps to make your class following this style
 
@@ -150,8 +150,9 @@ To achieve these goals we create separate interface and implementation. Interfac
   class CV_EXPORTS MyStereoMatcher : public StereoMatcher
   {
   public:
-      virtual void setLambda(double lambda) = 0;
       virtual double getLambda() const = 0;
+      virtual void setLambda(double lambda) = 0;
+      
       static Ptr<MyStereoMatcher> create(...);
   };
 
@@ -172,9 +173,9 @@ To achieve these goals we create separate interface and implementation. Interfac
       MyStereoMatcherImpl(...) { ... }
       virtual ~MyStereoMatcherImpl() { ... }
       double getLambda() const { ... }
-      void setLambda(double l) const { ... }
+      void setLambda(double l) { ... }
 
-      // implement required methods from base classes
+      // implement required methods from base StereoMatcher class
       void compute(InputArray _left, InputArray _right, OutputArray _disp) { ... }
 
   private:
@@ -191,7 +192,7 @@ To achieve these goals we create separate interface and implementation. Interfac
 
 - As long as the public interface is not modified, changes are fine.
 - If public interface should be changed, but it was not included in any official public release yet, changes are fine.
-- If you want to expose a new extended algorithm, it should be done in a way to preserve the source-level compatibility. Create a new interface on top of the existing one, and provide another `create` function to instantiate your algorithm:
+- If you want to expose a new extended algorithm, it should be done in a way to preserve the source-level compatibility. Create a new interface on top of the existing one, and provide another `create` function to instantiate your algorithm (since OpenCV 4.x it's fine to add new properties to algorithms, because we relaxed compatibility requirements from binary compatibility to source-level compatibility (except for the patch releases)):
 
   ```.cpp
   namespace cv {
