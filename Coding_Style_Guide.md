@@ -68,7 +68,7 @@ Naming conventions
 Designing functions and class interfaces
 ----------------------------------------
 
-It is important to design function interface is a way, consistent with the rest of the library. The elements of function interface include:
+It is important to design function interface in a way, consistent with the rest of the library. The elements of function interface include:
 
 -   Functionality
 -   Name
