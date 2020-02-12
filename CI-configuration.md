@@ -105,6 +105,7 @@ Basic:
 - `ubuntu:18.04`
 - `ubuntu32:16.04` (`linux-1,2,4`)
 - `fedora:28`, `fedora:29` (`linux-1,2,4`)
+- `centos:7` (`linux-1`)
 
 Compiler:
 - `ubuntu-clang:18.04`
@@ -129,8 +130,7 @@ Android:
 DNN backends testing:
 - `ubuntu-openvino:16.04`
 - `ubuntu-openvino:18.04`
-- `ubuntu-openvino-2019r1:16.04`
-- `ubuntu-openvino-2019r2.0:16.04`
+- `ubuntu-openvino-2020.1.0:16.04`
 - `ubuntu-openvino-2019r3.0:16.04`
 - `ubuntu-vulkan:16.04` - for testing DNN Vulkan backend
 - `ubuntu-cuda:18.04` (`linux-?`) - CUDA 10.0 with CUDNN?
@@ -150,13 +150,14 @@ and many deprecated/special build_images for coverage/valgrind/etc
 - `msvs2015`, `msvs2015-win32`
 - `msvs2017`, `msvs2017-win32` (`windows-1`)
 - `msvs2019`, `msvs2019-win32` (`windows-1`)
-- `openvino-2019r1`, `openvino-2019r2.0`, `openvino-2019r3.0`
+- `openvino-2020.1.0`, `openvino-2019r3.0`
 
 Useful extra parameters: `test_opencl=ON`
 
 ### macOS X `build_image` list
 
-- `openvino-2019r1`, `openvino-2019r2.0`, `openvino-2019r3.0`
+- `openvino-2020.1.0`, `openvino-2019r3.0`
+- `osx_framework`
 
 
 ## Parameters for special validation cases
@@ -182,9 +183,9 @@ disable_ipp=ON
 - DNN testing (OpenVINO or new layers, tests set changes):
 ```
 force_builders=Custom,Custom Win,Custom Mac
-build_image:Custom=ubuntu-openvino-2019r3.0:16.04
-build_image:Custom Win=openvino-2019r3.0
-build_image:Custom Mac=openvino-2019r3.0
+build_image:Custom=ubuntu-openvino-2020.1.0:16.04
+build_image:Custom Win=openvino-2020.1.0
+build_image:Custom Mac=openvino-2020.1.0
 
 test_modules:Custom=dnn,python2,python3,java
 test_modules:Custom Win=dnn,python2,python3,java
