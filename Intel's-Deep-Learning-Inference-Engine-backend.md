@@ -15,6 +15,7 @@ OpenVINO 2018 R2 and later comes with OpenCV built with DL IE support, so you ca
 Setup environment variables to detect Inference Engine:
 ```
 source /opt/intel/openvino/bin/setupvars.sh
+export ngraph_DIR=/opt/intel/openvino/deployment_tools/ngraph/cmake/
 ```
 
 Build OpenCV with extra flags:
