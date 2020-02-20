@@ -4,7 +4,7 @@ Depends on topology, graph may contains some unfused layers which are not covere
 
 ![image](https://user-images.githubusercontent.com/25801568/74974976-3fe30b00-5437-11ea-8512-dc9d66c497ea.png)
 
-If you know how to replace TensorFlow subgraph to something simpler which can be parser by OpenCV (see [tf_importer.cpp](https://github.com/opencv/opencv/blob/master/modules/dnn/src/tensorflow/tf_importer.cpp) and [tf_graph_simplifier.cpp](https://github.com/opencv/opencv/blob/master/modules/dnn/src/tensorflow/tf_graph_simplifier.cpp)) you may use **optional** parameter of [cv::dnn::readNetFromTensorflow](https://docs.opencv.org/master/d6/d0f/group__dnn.html#gad820b280978d06773234ba6841e77e8d) to get a text graph representation of a frozen `.pb` file.
+If you know how to replace TensorFlow subgraph to something simpler which can be parser by OpenCV (see [tf_importer.cpp](https://github.com/opencv/opencv/blob/master/modules/dnn/src/tensorflow/tf_importer.cpp) and [tf_graph_simplifier.cpp](https://github.com/opencv/opencv/blob/master/modules/dnn/src/tensorflow/tf_graph_simplifier.cpp)) you may use **optional** parameter of [cv::dnn::readNetFromTensorflow](https://docs.opencv.org/master/d6/d0f/group__dnn.html#gad820b280978d06773234ba6841e77e8d) to use a text graph representation of a frozen `.pb` file.
 
 Whet is text graph representation? TensorFlow uses Google Protobuf format to store deep learning networks. This format can be as binary as textual. Due models usually have a lot of trainable weights it is more optimal to store them as binary rather than text file.
 
