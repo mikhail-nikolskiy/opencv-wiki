@@ -33,7 +33,7 @@ graph_def.library.Clear()
 tf.compat.v1.train.write_graph(graph_def, "", 'model.pbtxt', as_text=True)
 ```
 
-Then replace a problematic subgraph
+Then open `model.pbtxt` and replace a problematic subgraph
 ```yaml
 node {
   name: "flatten_1/Shape"
