@@ -207,5 +207,5 @@ Finally, use both `.pb` and `.pbtxt` to import network into OpenCV:
 ```python
 import cv2 as cv
 
-net = cv.dnn.readNet('model.pb', 'model.pbtxt')
+net = cv.dnn.readNetFromTensorflow('model.pb', 'model.pbtxt')
 ```
