@@ -55,7 +55,8 @@ Following these guidelines will increase the likelihood of your pull request bei
 4.  If you have added new functionality, you should update/create the relevant documentation, as well as add tests for it to the testsuite.
 5.  Try not to include "oops" commits - ones that just fix an error in the previous commit. If you have those, then before submitting [squash](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Squashing-Commits) those fixes directly into the commits where they belong.
 6.  Make sure to choose the right base branch and to follow the [[Coding_Style_Guide]] for your code.
-
+7. Make sure to add test for new functionality or test that reproduces fixed bug with related test data. Please do not add extra images or videos, if some of existing media files are suitable.
+8. Make sure to add performance test, if you propose optimization or the patch could affect performance of major functionality. See [HowToWritePerfTests](HowToWritePerfTests) page to implement good test and [HowToUsePerfTests](HowToUsePerfTests) page to run performance tests properly.
 
 Testing and merging pull requests
 ---------------------------------
