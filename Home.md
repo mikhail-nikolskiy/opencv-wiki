@@ -6,7 +6,7 @@ General resources
 
 - :globe_with_meridians: [Official site](https://opencv.org/) - read about the library, subscribe to the [news](https://opencv.org/news.html), browse [releases](https://opencv.org/releases.html) and study the [license](https://opencv.org/license.html)
 
-- FAQ page: [FAQ](FAQ) list of frequently asked questions and answers  moderated by the core team
+- :question: [FAQ](FAQ) list of frequently asked questions and answers  moderated by the core team
 - :speech_balloon: [Q&A forum](http://answers.opencv.org) - ask questions and share your knowledge by answering others' questions
 
 - :books: [Documentation](https://docs.opencv.org/):
