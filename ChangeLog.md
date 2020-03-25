@@ -77,6 +77,8 @@ Highlights of this release:
 
     - highgui(Qt): add Copy to clipboard: [#16677](https://github.com/opencv/opencv/pull/16677)
 
+    - dnn: ONNX importer improvements by [@ashishkrshrivastava](https://github.com/ashishkrshrivastava): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+author%3Aashishkrshrivastava+is%3Aclosed+milestone%3A3.4.10)
+
     - (opencv_contrib) add rapid module for silhouette based 3D object tracking: [#2356](https://github.com/opencv/opencv_contrib/pull/2356)
 
     - help materials: OpenCV Cheat Sheet in Python: [#4875](https://github.com/opencv/opencv/issues/4875)
