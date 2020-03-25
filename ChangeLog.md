@@ -30,6 +30,8 @@ Highlights of this release:
 
       - DarkNet: grouped convolutions, sigmoid, swish, scale_channels
 
+      - MobileNet-SSD v3: [#16760](https://github.com/opencv/opencv/pull/16760)
+
     - New samples / demos:
 
       - [Clothes parts segmentation](https://github.com/opencv/opencv/pull/16223) and [CP-VTON](https://github.com/opencv/opencv/pull/16472)
