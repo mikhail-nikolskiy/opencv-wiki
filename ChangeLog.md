@@ -32,7 +32,7 @@ Highlights of this release:
 
     - New samples / demos:
 
-      - [CP-VTON](https://github.com/opencv/opencv/pull/16472)
+      - [Clothes parts segmentation](https://github.com/opencv/opencv/pull/16223) and [CP-VTON](https://github.com/opencv/opencv/pull/16472)
 
       - [DaSiamRPN tracker](https://github.com/opencv/opencv/pull/16554)
 
