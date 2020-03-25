@@ -1,6 +1,123 @@
 OpenCV Change Logs
 ==================
 
+<details>
+
+<summary>Coming soon... 4.3.0 / 3.4.10</summary>
+
+version:4.3.0
+-------------
+
+*April, 2020*
+
+Spring update for OpenCV 4.x has been released.
+
+Highlights of this release:
+
+![](images/dnn.png)
+
+- DNN module:
+
+    - Improved layers / activations / supported more models:
+
+      - LSTM from ONNX: [#16817](https://github.com/opencv/opencv/pull/16817)
+
+      - Broadcasting from ONNX: [#16738](https://github.com/opencv/opencv/pull/16738)
+
+      - Div op for constants: [#16722](https://github.com/opencv/opencv/pull/16722)
+
+      - Slice layer with multiple inputs: [#16715](https://github.com/opencv/opencv/pull/16715)
+
+      - DarkNet: grouped convolutions, sigmoid, swish, scale_channels
+
+    - New samples / demos:
+
+      - [CP-VTON](https://github.com/opencv/opencv/pull/16472)
+
+      - [DaSiamRPN tracker](https://github.com/opencv/opencv/pull/16554)
+
+    - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+
+      - added support for custom layers through nGraph OpenVINO API: [#16628](https://github.com/opencv/opencv/pull/16628)
+
+      - nGraph OpenVINO API is used by default: [#16746](https://github.com/opencv/opencv/pull/16746)
+
+    - Many fixes and optimizations in CUDA backend (thanks to [@YashasSamaga](https://github.com/YashasSamaga)): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+dnn%22+cuda+milestone%3A4.3.0)
+
+    - CPU/ARM: [Tengine accelerator](https://github.com/opencv/opencv/pull/16724)
+
+
+![](images/gapi.png)
+
+- G-API module:
+
+    - **TBD**
+
+
+![](images/speed.jpg)
+
+- Performance improvements:
+
+    - [IPP](https://software.intel.com/en-us/ipp)-ICV library with CPU optimizations has been [updated](https://github.com/opencv/opencv/pull/16639) to version 2020.0.0 Gold
+
+    - SIMD intrinsics: `integral`, `resize`
+
+
+![](images/github2.png)
+
+- And many other great contributions from OpenCV community:
+
+    - (opencv_contrib) Computer Vision based Alpha Matting (GSoC 2019) [#2306](https://github.com/opencv/opencv_contrib/pull/2306)
+
+    - calib3d: findChessboardCornersSB improvements: [#16625](https://github.com/opencv/opencv/pull/16625)
+
+    - calib3d: updated documentation for RT matrices: [#16860](https://github.com/opencv/opencv/pull/16860)
+
+    - core: improved getNumberOfCPUs(): [#16268](https://github.com/opencv/opencv/issues/16268#issuecomment-578432066)
+
+    - highgui(Qt): add Copy to clipboard: [#16677](https://github.com/opencv/opencv/pull/16677)
+
+    - (opencv_contrib) add rapid module for silhouette based 3D object tracking: [#2356](https://github.com/opencv/opencv_contrib/pull/2356)
+
+    - help materials: OpenCV Cheat Sheet in Python: [#4875](https://github.com/opencv/opencv/issues/4875)
+
+
+- Changes that can potentially break compatibility:
+
+    - image filtering functions throws exception on empty input ([voting results](https://github.com/opencv/opencv/issues/8300))
+
+
+### Contributors
+
+<details>
+<summary>opencv (XX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.2.0..4.3.0
+```
+
+</details>
+
+<details>
+<summary>opencv_contrib (XX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.2.0..4.3.0
+```
+
+</details>
+
+
+
+version:3.4.10
+-------------
+
+*April, 2020*
+
+OpenCV 3.4.10 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.3.0.
+
+</details>
+
 
 version:4.2.0
 -------------
