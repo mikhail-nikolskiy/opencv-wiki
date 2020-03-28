@@ -20,13 +20,7 @@ Highlights of this release:
 
     - Improved layers / activations / supported more models:
 
-      - LSTM from ONNX: [#16817](https://github.com/opencv/opencv/pull/16817)
-
-      - Broadcasting from ONNX: [#16738](https://github.com/opencv/opencv/pull/16738)
-
-      - Div op for constants: [#16722](https://github.com/opencv/opencv/pull/16722)
-
-      - Slice layer with multiple inputs: [#16715](https://github.com/opencv/opencv/pull/16715)
+      - ONNX: [LSTM](https://github.com/opencv/opencv/pull/16817), [Broadcasting](https://github.com/opencv/opencv/pull/16738), [Algebra over constants](https://github.com/opencv/opencv/pull/16722), [Slice with multiple inputs](https://github.com/opencv/opencv/pull/16715)
 
       - DarkNet: grouped convolutions, sigmoid, swish, scale_channels
 
