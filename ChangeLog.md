@@ -74,7 +74,7 @@ Highlights of this release:
 
     - core: improved getNumberOfCPUs(): [#16268](https://github.com/opencv/opencv/issues/16268#issuecomment-578432066)
 
-    - imgproc: new algorithm HOUGH_GRADIENT_ALT is added to HoughCircles() function [#16561](https://github.com/opencv/opencv/pull/16561). It has better recall and precision 
+    - imgproc: new algorithm HOUGH_GRADIENT_ALT is added to HoughCircles() function [#16561](https://github.com/opencv/opencv/pull/16561). It has much better recall and precision 
 
       ![](images/new_hough_circles.jpg)
 
