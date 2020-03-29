@@ -74,6 +74,10 @@ Highlights of this release:
 
     - core: improved getNumberOfCPUs(): [#16268](https://github.com/opencv/opencv/issues/16268#issuecomment-578432066)
 
+    - imgproc: new algorithm HOUGH_GRADIENT_ALT is added to HoughCircles() function [#16561](https://github.com/opencv/opencv/pull/16561). It has better recall and precision 
+
+      ![](images/new_hough_circles.jpg)
+
     - highgui(Qt): add Copy to clipboard: [#16677](https://github.com/opencv/opencv/pull/16677)
 
     - dnn: TensorFlow, Darknet and ONNX importers improvements by [@ashishkrshrivastava](https://github.com/ashishkrshrivastava): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+author%3Aashishkrshrivastava+is%3Aclosed+milestone%3A3.4.10)
