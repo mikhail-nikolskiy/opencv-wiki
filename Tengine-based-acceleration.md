@@ -8,7 +8,7 @@ Both 32-bit and 64-bit ARM architectures are supported as long as they provide N
 
 There are two ways to build OpenCV with Tengine support:
 1. Use pre-compiled Tengine binaries
-2. Automatically download Tengine and compile it during OpenCV configuration using CMake.
+2. Automatically download Tengine from github and compile it during OpenCV configuration using CMake.
 
 ## Using pre-compiled Tengine binaries
 
