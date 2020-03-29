@@ -6,7 +6,7 @@ Tengine (https://github.com/OAID/Tengine) is the efficient Deep Learning inferen
 
 Both 32-bit and 64-bit ARM architectures are supported as long as they provide NEON instructions.
 
-There are two ways to make use of Tengine in OpenCV:
+There are two ways to build OpenCV with Tengine support:
 1. Use the pre-compiled Tengine binaries
 2. Automatically download Tengine and compile it during OpenCV configuration using CMake.
 
