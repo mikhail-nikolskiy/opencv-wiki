@@ -40,9 +40,11 @@ Highlights of this release:
 
     - Many fixes and optimizations in CUDA backend (thanks to [@YashasSamaga](https://github.com/YashasSamaga)): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+dnn%22+cuda+milestone%3A4.3.0)
 
-    - CPU/ARM: [Tengine accelerator](https://github.com/opencv/opencv/pull/16724)
+    - CPU/ARM: The OpenAI Labs team submitted the [patch](https://github.com/opencv/opencv/pull/16724) that accelerates OpenCV DNN on ARM using their Tengine library:
 
+       ![](images/tengine_speed.png)
 
+      Here are the [installation instructions](https://github.com/opencv/opencv/wiki/Tengine-acceleration)
 ![](images/gapi.png)
 
 - G-API module:
