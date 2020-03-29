@@ -5,7 +5,7 @@
     - [[OpenCVLogo]]
 - [[Deep Learning in OpenCV|Deep-Learning-in-OpenCV]]
     - [[DNN Efficiency|DNN-efficiency]]
-       - [[Acceleration on ARM with Tengine|Tengine-acceleration]]
+       - [[Acceleration on ARM with Tengine|Tengine-based-acceleration]]
     - [[TensorFlow text graphs|TensorFlow text graphs]]
     - [[TensorFlow Object Detection API|TensorFlow Object Detection API]]
     - [[Intel's Deep Learning Inference Engine backend|Intel's Deep Learning Inference Engine backend]]
