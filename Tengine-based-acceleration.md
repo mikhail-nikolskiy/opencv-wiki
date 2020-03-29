@@ -37,7 +37,7 @@ The compiled Tengine tree should have the following structure:
 
 ## Compiling Tengine from source
 
-To compile OpenCV on Android with Tengine support you need to have Android NDK r14 or newer. To cross-compile OpenCV for ARM Linux you need to install the following packages:
+To compile OpenCV on Android with Tengine support you need to have Android NDK r14 or newer. To cross-compile OpenCV+Tengine for ARM Linux you need to install the following packages:
 
 ```
 sudo apt install g++-arm-linux-gnueabihf # for 32-bit ARM
