@@ -44,7 +44,7 @@ Highlights of this release:
 
        ![](images/tengine_speed.png)
 
-      Here are the [installation instructions](https://github.com/opencv/opencv/wiki/Tengine-acceleration)
+      Here are the [installation instructions](https://github.com/opencv/opencv/wiki/Tengine-based-acceleration)
 
 ![](images/gapi.png)
 
