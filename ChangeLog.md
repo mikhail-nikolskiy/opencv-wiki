@@ -1,10 +1,6 @@
 OpenCV Change Logs
 ==================
 
-<details>
-
-<summary>Coming soon... 4.3.0 / 3.4.10</summary>
-
 version:4.3.0
 -------------
 
@@ -59,7 +55,7 @@ Highlights of this release:
 
     - [IPP](https://software.intel.com/en-us/ipp)-ICV library with CPU optimizations has been [updated](https://github.com/opencv/opencv/pull/16639) to version 2020.0.0 Gold
 
-    - SIMD intrinsics: `integral`, `resize`
+    - SIMD intrinsics: `integral`, `resize`, (opencv_contrib) RLOF implementation [#2476](https://github.com/opencv/opencv_contrib/pull/2476)
 
 
 ![](images/github2.png)
@@ -74,15 +70,19 @@ Highlights of this release:
 
     - core: improved getNumberOfCPUs(): [#16268](https://github.com/opencv/opencv/issues/16268#issuecomment-578432066)
 
-    - imgproc: new algorithm HOUGH_GRADIENT_ALT is added to HoughCircles() function [#16561](https://github.com/opencv/opencv/pull/16561). It has much better recall and precision 
+    - imgproc: new algorithm HOUGH_GRADIENT_ALT is added to HoughCircles() function [#16561](https://github.com/opencv/opencv/pull/16561). It has much better recall and precision
 
       ![](images/new_hough_circles.jpg)
 
-    - highgui(Qt): add Copy to clipboard: [#16677](https://github.com/opencv/opencv/pull/16677)
+    - imgcodecs: added initial support for OpenJPEG library (version 2+): [#16494](https://github.com/opencv/opencv/pull/16494)
+
+    - highgui(Qt): added Copy to clipboard: [#16677](https://github.com/opencv/opencv/pull/16677)
 
     - dnn: TensorFlow, Darknet and ONNX importers improvements by [@ashishkrshrivastava](https://github.com/ashishkrshrivastava): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+author%3Aashishkrshrivastava+is%3Aclosed+milestone%3A3.4.10)
 
-    - (opencv_contrib) add rapid module for silhouette based 3D object tracking: [#2356](https://github.com/opencv/opencv_contrib/pull/2356)
+    - (opencv_contrib) added rapid module for silhouette based 3D object tracking: [#2356](https://github.com/opencv/opencv_contrib/pull/2356)
+
+    - (opencv_contrib) SIFT detector is enabled by default due patents expiration (without requirement of NONFREE build option)
 
     - help materials: OpenCV Cheat Sheet in Python: [#4875](https://github.com/opencv/opencv/issues/4875)
 
@@ -95,19 +95,134 @@ Highlights of this release:
 ### Contributors
 
 <details>
-<summary>opencv (XX contributors)</summary>
+<summary>opencv (90 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.2.0..4.3.0
+   107  Alexander Alekhin
+    34  Liubov Batanina
+    22  Dmitry Kurtaev
+    13  Maksim Shabunin
+    11  YashasSamaga
+     8  Vadim Pisarevsky
+     7  Alexander Smorkalov
+     6  Anton Potapov
+     6  ashishiva3@gmail.com
+     5  Anatoliy Talamanov
+     5  Hannes Achleitner
+     5  Maxim Pashchenkov
+     4  Gourav Roy
+     4  Vadim Levin
+     4  Yashas Samaga B L
+     3  Alexander Duda
+     3  Chip Kerchner
+     3  Collin Brake
+     3  Ganesh Kathiresan
+     3  Julien
+     3  Peter Würtz
+     3  Sayed Adel
+     2  Andrey Golubev
+     2  Brian Wignall
+     2  Dizhenin Vlad
+     2  Dmitry Matveev
+     2  Ilya Lavrenov
+     2  Moritz Fischer-Gundlach
+     2  NesQl
+     2  Pavel Rojtberg
+     2  Polina Smolnikova
+     2  Rajkiran Natarajan
+     2  StefanBruens
+     2  berak
+     2  catree
+     2  cyy
+     2  hannesa2
+     1  Aditya Kumar
+     1  Alexey Smirnov
+     1  Andrei-Florin BENCSIK
+     1  Andrew Bruce
+     1  Arnaud Brejeon
+     1  Augusto Fraga Giachero
+     1  Christoph Schmidt-Hieber
+     1  Eduard Trulls
+     1  Elizarov Ilya
+     1  Gagandeep Singh
+     1  Ianaré Sévi
+     1  Igor Murzov
+     1  Ivan Galanin
+     1  Jan Solanti
+     1  Janusz Lisiecki
+     1  Jed
+     1  Julien Maille
+     1  Karl Liu
+     1  Khem Raj
+     1  Manoj Gupta
+     1  Miguel Pari Soto
+     1  MoonChasing
+     1  Muhammad Taha
+     1  Niklas Hambüchen
+     1  Nuzhny007
+     1  Omar Hassan
+     1  Paul E. Murphy
+     1  Pierre Letessier
+     1  Pratik Raj
+     1  RAJKIRAN NATARAJAN
+     1  Samuel Thibault
+     1  Smirnov Alexey
+     1  Suleyman TURKMEN
+     1  Talamanov, Anatoliy
+     1  Tomoaki Teshima
+     1  Yuhel Tanaka
+     1  Yuriy Obukh
+     1  Zach Lowry
+     1  ankit6979
+     1  atinfinity
+     1  baka-gori
+     1  cudawarped
+     1  firebladed
+     1  gapry
+     1  h6197627
+     1  ihsan314
+     1  iteal
+     1  jshiwam
+     1  keeper121
+     1  midjji
+     1  olramde
+     1  rayonnant14
+     1  sajarindider
 ```
 
 </details>
 
 <details>
-<summary>opencv_contrib (XX contributors)</summary>
+<summary>opencv_contrib (25 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.2.0..4.3.0
+     7  Alexander Alekhin
+     4  Pavel Rojtberg
+     2  Alexander Smorkalov
+     2  Ayush Garg
+     2  catree
+     1  David Geldreich
+     1  Gagandeep Singh
+     1  Igor Murzov
+     1  Kunal Tyagi
+     1  Lim
+     1  Maksim Shabunin
+     1  Miloš Komarčević
+     1  RAJKIRAN NATARAJAN
+     1  Rostislav Vasilikhin
+     1  Tobias Senst
+     1  Vishal Chiluka
+     1  Xavier Weber
+     1  akashsharma02
+     1  atinfinity
+     1  berak
+     1  cudawarped
+     1  jshiwam
+     1  raanyild
+     1  shimat
+     1  sunitanyk
 ```
 
 </details>
@@ -121,7 +236,6 @@ version:3.4.10
 
 OpenCV 3.4.10 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.3.0.
 
-</details>
 
 
 version:4.2.0

@@ -8,9 +8,6 @@ You can use it as a computational backend for OpenCV deep learning module.
   **Important note**: if you want to transfer the installed Inference Engine binaries to another machine w/o running OpenVINO installer there, you need [the redistributable files of Intel C++ compiler](https://software.intel.com/en-us/articles/intel-compilers-redistributable-libraries-by-version) (use the latest update, 64-bit version), otherwise the Inference Engine or some of its essential plugins will refuse to load and run, which may result in an app crash.
 
 
-<details>
-
-<summary>...pending content...</summary>
 
 ### OpenCV+DLDT Windows package (community version)
 
@@ -33,8 +30,8 @@ Software requirements:
 
 | [DLDT version](https://github.com/opencv/dldt/releases) | [GitHub releases](https://github.com/opencv/opencv/releases) | [SourceForge](https://sourceforge.net/projects/opencvlibrary/) |
 | ---------------------------------------------- | --------------- | --------------- |
-| 2020.1 (release binaries)                      | [.7z](TBD) (~150Mb) / [.zip](TBD) (~220Mb) | [.7z](TBD) (~150Mb) / [.zip](TBD) (~220Mb) |
-| 2020.1 (debug binaries)                        | [.7z](TBD) (~175Mb) | [.7z](TBD) (~175Mb) |
+| 2020.1 (release binaries)                      | [.7z](https://github.com/opencv/opencv/releases/download/4.3.0/opencv-4.3.0-dldt-2020.1-vc16-avx2.7z) (~150Mb) / [.zip](https://github.com/opencv/opencv/releases/download/4.3.0/opencv-4.3.0-dldt-2020.1-vc16-avx2.zip) (~220Mb) | [.7z](https://sourceforge.net/projects/opencvlibrary/files/4.3.0/opencv-4.3.0-dldt-2020.1-vc16-avx2.7z/download) (~150Mb) / [.zip](https://sourceforge.net/projects/opencvlibrary/files/4.3.0/opencv-4.3.0-dldt-2020.1-vc16-avx2.zip/download) (~220Mb) |
+| 2020.1 (debug binaries)                        | [.7z](https://github.com/opencv/opencv/releases/download/4.3.0/opencv-4.3.0-dldt-2020.1-vc16-avx2-debug.7z) (~175Mb) | [.7z](https://sourceforge.net/projects/opencvlibrary/files/4.3.0/opencv-4.3.0-dldt-2020.1-vc16-avx2-debug.7z/download) (~175Mb) |
 
 DLDT components included in this release:
 
@@ -54,6 +51,8 @@ Package with debug binaries is intended for development of C++ applications only
 </details -->
 
 #### First steps
+
+Steps below require package with release binaries. Steps for debug binaries might differ.
 
 1. Extract package contents
 
@@ -110,7 +109,7 @@ Package with debug binaries is intended for development of C++ applications only
         <package_root>\src\opencv\samples\_winpack_build_sample.cmd <package_root>\src\opencv\samples\cpp\drawing.cpp
         ```
 
-</details>
+
 
 ### Build OpenCV from source
 
