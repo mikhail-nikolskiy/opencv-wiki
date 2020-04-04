@@ -38,7 +38,7 @@ Highlights of this release:
 
     - OPEN AI LAB team submitted the [patch](https://github.com/opencv/opencv/pull/16724) that accelerates OpenCV DNN on ARM using their Tengine library:
 
-       ![](images/tengine_speed.png)
+       ![](images/tengine_speed_upd.png)
 
       Here are the [installation instructions](https://github.com/opencv/opencv/wiki/Tengine-based-acceleration)
 
