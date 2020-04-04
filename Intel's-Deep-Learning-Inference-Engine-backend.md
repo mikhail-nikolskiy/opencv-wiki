@@ -5,6 +5,9 @@ To use OpenCV with Inference Engine, choose one of the options:
 * [Intel&reg; OpenVINO&trade; toolkit](#intel-openvino-toolkit) - includes ready to use build of OpenCV
 * [OpenCV+DLDT Windows package (community version)](#opencvdldt-windows-package-community-version)
 * [Build from source](#build-opencv-from-source)
+  * [Linux](#linux)
+  * [Microsoft Windows](#microsoft-windows)
+  * [Raspbian](#raspbian-buster)
 
 ---
 
@@ -121,7 +124,7 @@ Steps below require package with release binaries. Steps for debug binaries migh
 
 Build OpenCV with pre-built Inference Engine binaries from OpenVINO toolkit.
 
-#### Ubuntu
+#### Linux
 
 Setup environment variables to detect Inference Engine:
 ```
