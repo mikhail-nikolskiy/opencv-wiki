@@ -46,7 +46,10 @@ Highlights of this release:
 
 - G-API module:
 
-    - **TBD**
+    - Introduced a new graph-level data type [`GOpaque<T>`](https://github.com/opencv/opencv/blob/4.3.0/modules/gapi/test/gapi_opaque_tests.cpp#L112). This type can be used to pass arbitrary user data types between G-API nodes in the graph (supported for CPU/OpenCV backend only).
+    - Introduced a way to declare G-API CPU (OpenCV) kernels in-place ([example](https://github.com/opencv/opencv/blob/4.3.0/modules/gapi/test/gapi_sample_pipelines.cpp#L361));
+    - Added a new sample "Privacy masking camera", combining Deep Learning with traditional Image Processing ([link](https://github.com/opencv/opencv/blob/4.3.0/modules/gapi/samples/privacy_masking_camera.cpp))
+    - Added more operations in the default library: WarpAffine, WarpPerspective, NV12toGray.
 
 
 ![](images/speed.jpg)
