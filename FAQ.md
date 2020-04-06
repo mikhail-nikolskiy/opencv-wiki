@@ -13,7 +13,14 @@ You may consider [opencv_contrib](https://github.com/opencv/opencv_contrib) appr
 - Use cross compilation approach:[link](https://docs.opencv.org/master/d0/d76/tutorial_arm_crosscompile_with_cmake.html)
 - Update compiler.  
 
-**Discussion:**  
+**Discussion:** TBD  
+
+# General API Concepts
+
+**Q:** _What is InputArray and how can I understand the actual input types of parameters?_  
+**A:** This is the proxy class for passing read-only input arrays into OpenCV functions. The class should not be used in user code, pass `cv::Mat`, `cv::UMat`, `cv::GpuMat` or `std::vector<>` as function parameter and OpenCV extracts data from it without memory copying. In case if you work on new OpenCV module in Contrib repository or new function for core library you should use `cv::_InputArray::getMat()` method to construct a matrix header for the array inside function. `cv::_InputArray::kind()` can be used to distinguish actual input container format, but usially it is not needed.  
+
+**Documentation:** https://docs.opencv.org/master/d4/d32/classcv_1_1__InputArray.html
 
 # Hardware & OS
 
@@ -34,5 +41,10 @@ There are 2 alternatives to use `wchar_t` strings with OpenCV (see discussion se
 **Discussion:** [4292](https://github.com/opencv/opencv/issues/4292#issuecomment-601686965), [5631](https://github.com/opencv/opencv/issues/5631), [13368](https://github.com/opencv/opencv/pull/13368)  
  
 # Classic Computer Vision
+
+**Q:** _Which is more efficient, use `contourArea()` or count number of ROI non-zero pixels?_  
+**A:** `cv::contourArea()` uses Green formula to compute the area, therefore its complexity is `O(contour_number_of_vertices)`. Counting non-zero pixels in the ROI is `O(roi_width*roi_height)` algorithm, i.e. much slower. Note, however, that because of finite, and quite low, resolution of the raster grid, the two algorithms will give noticeably different results. For large and square-like contours the error will be minimal. For small and/or oblong contours the error can be quite large.  
+
+Links: [Green's Theorem](http://en.wikipedia.org/wiki/Green's_theorem)  
 
 # DNN
