@@ -18,11 +18,13 @@ You may consider [opencv_contrib](https://github.com/opencv/opencv_contrib) appr
 # General API Concepts
 
 **Q:** _What is InputArray and how can I understand the actual input types of parameters?_  
-**A:** This is the proxy class for passing read-only input arrays into OpenCV functions. The class should not be used in user code, pass `cv::Mat`, `cv::UMat`, `cv::GpuMat` or `std::vector<>` as function parameter and OpenCV extracts data from it without memory copying. In case if you work on new OpenCV module in Contrib repository or new function for core library you should use `cv::_InputArray::getMat()` method to construct a matrix header for the array inside function. `cv::_InputArray::kind()` can be used to distinguish actual input container format, but usially it is not needed.  
+**A:** This is the proxy class for passing read-only input arrays into OpenCV functions. The class should not be used in user code, pass `cv::Mat`, `cv::UMat`, `cv::GpuMat` or `std::vector<>` as function parameter and OpenCV extracts data from it without memory copying. In case if you work on new OpenCV module in Contrib repository or new function for core library you should use `cv::_InputArray::getMat()` method to construct a matrix header for the array inside function. `cv::_InputArray::kind()` can be used to distinguish actual input container format, but usually it is not needed.  
 
 **Documentation:** https://docs.opencv.org/master/d4/d32/classcv_1_1__InputArray.html
 
 # Hardware & OS
+
+TBD
 
 # Video I/O, Image I/O, Data serialization
 
@@ -48,3 +50,5 @@ There are 2 alternatives to use `wchar_t` strings with OpenCV (see discussion se
 Links: [Green's Theorem](http://en.wikipedia.org/wiki/Green's_theorem)  
 
 # DNN
+
+TBD
