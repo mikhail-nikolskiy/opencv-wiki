@@ -95,7 +95,7 @@ Read more:
 Results
 -------
 
-We will measure total size of non-stripped samples produced during OpenCV build (with `-DBUILD_EXAMPLES=ON` option): `du -hc build/bin/cpp-example-* | grep total`
+We will measure total size of non-stripped C++ samples (~80 samples in total) produced during OpenCV build (with `-DBUILD_EXAMPLES=ON` option): `du -hc build/bin/cpp-example-* | grep total`
 
 > :grey_exclamation: **Note:** binaries size depends on the library configuration which in turn depends on the platform configuration and libraries installed in the build environment. Here we will compare _x86_64_ builds without CUDA, OpenCL and IPP: `-DWITH_CUDA=OFF`, `-DWITH_OPENCL=OFF`, `-DWITH_IPP=OFF`.
 
