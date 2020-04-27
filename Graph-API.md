@@ -23,6 +23,24 @@ build_gapi_standalone:Linux x64=ade-0.1.1f
 build_gapi_standalone:Win64=ade-0.1.1f
 build_gapi_standalone:Mac=ade-0.1.1f
 build_gapi_standalone:Linux x64 Debug=ade-0.1.1f
+
+Xbuild_image:Custom=centos:7
+Xbuildworker:Custom=linux-1
+build_gapi_standalone:Custom=ade-0.1.1f
+
+build_image:Custom=ubuntu-openvino-2020.2.0:16.04
+build_image:Custom Win=openvino-2020.2.0
+build_image:Custom Mac=openvino-2020.2.0
+
+test_modules:Custom=gapi
+test_modules:Custom Win=gapi
+test_modules:Custom Mac=gapi
+
+buildworker:Custom=linux-1
+# disabled due high memory usage: test_opencl:Custom=ON
+test_opencl:Custom=OFF
+test_bigdata:Custom=1
+test_filter:Custom=*
 ```
 Note: ADE version may change, refer to the latest correct one (see `DownloadADE.cmake`).
 
