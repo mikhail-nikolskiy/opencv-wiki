@@ -93,7 +93,7 @@ Next time we suggest you to do the following. Install the default pre-commit hoo
 
 ```.sh
 cd opencv
-mv opencv/.git/hooks/pre-commit.sample opencv/.git/hooks/pre-commit
+mv .git/hooks/pre-commit.sample .git/hooks/pre-commit
 ```
 
 Also, you can check for whitespace errors before the commit using this command:
