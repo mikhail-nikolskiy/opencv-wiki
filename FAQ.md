@@ -41,7 +41,15 @@ There are 2 alternatives to use `wchar_t` strings with OpenCV (see discussion se
 2. OpenCV provides `cv::imdecode` and `cv::imencode` functions that allow to decode and encode image using memory buffer as input and output. The solution decouples file IO and image decoding and allows to manage path strings, locales, etc in user code.  
 
 **Discussion:** [4292](https://github.com/opencv/opencv/issues/4292#issuecomment-601686965), [5631](https://github.com/opencv/opencv/issues/5631), [13368](https://github.com/opencv/opencv/pull/13368)  
- 
+
+**Q:** _VideoCapture cannot open my file/camera or does it in wrong way. How can I resolve the issue?_  
+**A:** `cv::VideoCapture` uses different backends for different cameras, files and platforms. There are several things to check and try with OpenCV:
+1. OpenCV build options and available backends with `cv::getBuildInformation()` (`cv2.getBuildInformation()` in Python). See [documentation](https://docs.opencv.org/master/db/de0/group__core__utils.html#ga0ae377100bc03ce22322926bba7fdbb5) for details.
+2. Run your application with `OPENCV_VIDEOIO_DEBUG=1` option to enable extra logging inside the library. It helps to identify the backend used in run time and configuration details.
+3. Force OpenCV to use particular backend with the second parameter in constructor. See [documentation](https://docs.opencv.org/master/d8/dfe/classcv_1_1VideoCapture.html#ac4107fb146a762454a8a87715d9b7c96) for details.  
+
+**Discussion:** TBD 
+
 # Classic Computer Vision
 
 **Q:** _Which is more efficient, use `contourArea()` or count number of ROI non-zero pixels?_  
