@@ -36,3 +36,5 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * (DONE) ~~[[OE-29 - Adding AVX512 Support|OE-29.-Adding AVX512 Support]]~~
 * [[OE-30 - Color Calibration|OE-30.-Color-Calibration]]
 * [[OE-31 - Julia Bindings|OE-31.-Julia-Bindings]]
+* [[OE-32 - Change OpenCV License to Apache 2]]
+
