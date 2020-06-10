@@ -45,6 +45,16 @@ test_filter:Custom=*
 Notes:
 - ADE version may change, refer to the latest correct one (see `DownloadADE.cmake`).
 
+G-API build depends on a number of external components which may not be built by default, e.g. [PlaidML](https://github.com/plaidml/plaidml). It is also worth testing if any internal API changes are made:
+
+```
+force_builders=Custom
+buildworker:Custom=linux-1
+build_image:Custom=plaidml2
+test_modules:Custom=gapi
+test_filter:Custom=*ML*
+```
+
 Materials
 ============
 
