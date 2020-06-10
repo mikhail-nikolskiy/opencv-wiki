@@ -28,9 +28,9 @@ Xbuild_image:Custom=centos:7
 Xbuildworker:Custom=linux-1
 build_gapi_standalone:Custom=ade-0.1.1f
 
-build_image:Custom=ubuntu-openvino-2020.2.0:16.04
-build_image:Custom Win=openvino-2020.2.0
-build_image:Custom Mac=openvino-2020.2.0
+build_image:Custom=ubuntu-openvino-2020.3.0:16.04
+build_image:Custom Win=openvino-2020.3.0
+build_image:Custom Mac=openvino-2020.3.0
 
 test_modules:Custom=gapi
 test_modules:Custom Win=gapi
