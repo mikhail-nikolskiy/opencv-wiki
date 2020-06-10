@@ -13,6 +13,37 @@ What it is?
 
 * G-API GPU backend implements the majority of available functions and allows to run OpenCL kernels on available OpenCL-programmable devices. At the moment, GPU backend is based on OpenCV Transparent API; in future versions it will be extended to support integration of arbitrary OpenCL kernels (and likely be renamed to "OpenCL backend").
 
+Testing G-API
+=============
+
+By default, the OpenCV G-API comes with its own test suite (`opencv_test_gapi`). Note that extra (external) G-API modules may introduce their own test suites. G-API tests are built and run in a regular way:
+
+## Linux
+
+```
+$ make -j4 opencv_test_gapi
+$ bin/opencv_test_gapi
+```
+
+## Windows
+
+```
+$ cmake --build . --target opencv_test_gapi --config Release -- /maxcpucount:4
+$ bin\Release\opencv_test_gapi.exe
+```
+
+A tiny fraction of G-API tests requires external test data to be available. This data is taken from the [opencv_extra](http://github.com/opencv/opencv_extra) repo:
+
+```
+export OPENCV_TEST_DATA_PATH=/path/to/opencv_extra/testdata
+```
+
+When you build G-API with OpenVINO Inference Engine support (`-DInferenceEngine_DIR=...` `-DWITH_INF_ENGINE=ON`), some extra tests for inference are enabled and require `OPENCV_DNN_TEST_DATA_PATH` to be set and **models downloaded according to the [instruction](https://github.com/opencv/opencv/blob/master/modules/dnn/test/test_ie_models.cpp#L73)**!
+
+```
+export OPENCV_DNN_TEST_DATA_PATH=/path/to/opencv_extra/testdata/dnn
+```
+
 Submitting G-API PRs
 ====================
 
