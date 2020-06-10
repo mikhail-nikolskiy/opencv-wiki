@@ -42,7 +42,8 @@ test_opencl:Custom=OFF
 test_bigdata:Custom=1
 test_filter:Custom=*
 ```
-Note: ADE version may change, refer to the latest correct one (see `DownloadADE.cmake`).
+Notes:
+- ADE version may change, refer to the latest correct one (see `DownloadADE.cmake`).
 
 Materials
 ============
