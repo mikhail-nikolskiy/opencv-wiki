@@ -71,13 +71,14 @@ You can use one of the configs that has been tested in OpenCV. Choose it depends
 | Faster-RCNN Inception v2 | 2018_01_28 | [weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz) | [config](https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/faster_rcnn_inception_v2_coco_2018_01_28.pbtxt)
 | Faster-RCNN ResNet-50 | 2018_01_28 | [weights](http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet50_coco_2018_01_28.tar.gz) | [config](https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/faster_rcnn_resnet50_coco_2018_01_28.pbtxt)
 | Mask-RCNN Inception v2 | 2018_01_28 | [weights](http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz) | [config](https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt)
-
+| EfficientDet-D0 (see [#17384](https://github.com/opencv/opencv/pull/17384)) | | [weights](https://www.dropbox.com/s/9mqp99fd2tpuqn6/efficientdet-d0.pb?dl=1) | [config](https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/efficientdet-d0.pbtxt)
 
 ### Generate a config file
 Use one of scripts which generate a text graph representation for a frozen `.pb` model depends on it's architecture:
 * [tf_text_graph_ssd.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_ssd.py)
 * [tf_text_graph_faster_rcnn.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_faster_rcnn.py)
 * [tf_text_graph_mask_rcnn.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_mask_rcnn.py)
+* [tf_text_graph_efficientdet.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_efficientdet.py)
 
 Pass a [configuration file](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs) which was used for training to help script determine hyper-parameters.
 
