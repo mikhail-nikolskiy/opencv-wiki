@@ -1,6 +1,119 @@
 OpenCV Change Logs
 ==================
 
+
+<details>
+
+<summary>Coming soon... 4.4.0 / 3.4.11</summary>
+
+version:4.4.0
+-------------
+
+*July, 2020*
+
+Summer update for OpenCV 4.x has been released :sunny:
+
+
+Highlights of this release:
+
+- SIFT (Scale-Invariant Feature Transform) algorithm has been moved to the main repository (patent on SIFT is expired)
+
+![](images/dnn.png)
+
+- DNN module:
+
+    - Improved layers / activations / supported more models:
+
+      - State-of-art Yolo v4 Detector: [#17148](https://github.com/opencv/opencv/issues/17148)
+
+      - ONNX: Add support for Resnet_backbone (Torchvision) [#16887](https://github.com/opencv/opencv/pull/16887)
+
+      - **TBD**
+
+    - New samples / demos:
+
+      - add text recognition sample: [C++](https://github.com/opencv/opencv/pull/16941) / [Python](https://github.com/opencv/opencv/pull/16955)
+
+      - **TBD**
+
+    - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+
+      - added support for OpenVINO 2020.3 LTS / 2020.4 releases
+
+      - support of NN Builder API is planned for removal in the next release
+
+    - Many fixes and optimizations in CUDA backend (thanks to [@YashasSamaga](https://github.com/YashasSamaga)): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+dnn%22+cuda+milestone%3A4.4.0)
+
+
+![](images/gapi.png)
+
+- G-API module:
+
+    - **TBD**
+
+
+![](images/speed.jpg)
+
+- Performance improvements:
+
+    - **TBD**
+
+
+![](images/github2.png)
+
+- And many other great contributions from OpenCV community:
+
+    - Obj-C / Swift bindings [#17165](https://github.com/opencv/opencv/pull/17165)
+
+    - (opencv_contrib) Julia bindings as part of ongoing GSoC project [#2547](https://github.com/opencv/opencv_contrib/pull/2547)
+
+    - (opencv_contrib) BIMEF: A Bio-Inspired Multi-Exposure Fusion Framework for Low-light Image Enhancement [#2448](https://github.com/opencv/opencv_contrib/pull/2448)
+
+    - Enable Otsu thresholding for CV_16UC1 images [#16640](https://github.com/opencv/opencv/pull/16640)
+
+    - Add Stroke Width Transform algorithm for Text Detection [#2464](https://github.com/opencv/opencv_contrib/pull/2464)
+
+
+- Planned migration on Apache 2 license for next releases [OE-32](https://github.com/opencv/opencv/wiki/OE-32.--Change-OpenCV-License-to-Apache-2) [#17491](https://github.com/opencv/opencv/issues/17491)
+
+
+
+### Contributors
+
+<details>
+<summary>opencv (XXX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.3.0..4.4.0
+TBD
+```
+
+</details>
+
+<details>
+<summary>opencv_contrib (XXX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.3.0..4.4.0
+TBD
+```
+
+</details>
+
+
+
+version:3.4.11
+-------------
+
+*July, 2020*
+
+OpenCV 3.4.11 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.4.0.
+
+
+</details>
+
+
+
 version:4.3.0
 -------------
 
