@@ -24,11 +24,11 @@ Highlights of this release:
 
     - Improved layers / activations / supported more models:
 
-      - State-of-art Yolo v4 Detector: [#17148](https://github.com/opencv/opencv/issues/17148)
+      - State-of-art Yolo v4 Detector: [#17148](https://github.com/opencv/opencv/issues/17148). Disabled per-layer NMS for `[yolo]` layers (Yolo v3 and Yolo v4) as incorrect - use `cv::dnn::NMSBoxes` over all the detections.
 
       - ONNX: Add support for Resnet_backbone (Torchvision) [#16887](https://github.com/opencv/opencv/pull/16887)
 
-      - **TBD**
+      - EfficientDet models support: [#17384](https://github.com/opencv/opencv/pull/17384)
 
     - New samples / demos:
 
