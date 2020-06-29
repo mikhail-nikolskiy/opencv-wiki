@@ -34,7 +34,7 @@ Highlights of this release:
 
       - add text recognition sample: [C++](https://github.com/opencv/opencv/pull/16941) / [Python](https://github.com/opencv/opencv/pull/16955)
 
-      - **TBD**
+      - FlowNet2 optical flow: [#16575](https://github.com/opencv/opencv/pull/16575)
 
     - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
 
