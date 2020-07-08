@@ -49,7 +49,10 @@ Highlights of this release:
 
 - G-API module:
 
-    - **TBD**
+    - Introduced a new API for stateful kernels in OpenCV backend: `GAPI_OCV_KERNEL_ST`. Stateful kernels preserve their state among the individual graph executions (in the standard more) or among the video frames of the stream (in the streaming mode).
+    - Introduced more video-oriented operations in G-API: `goodFeaturesToTrack`, `buildOpticalFlowPyramid`, `calcOpicalFlowPyrLK`.
+    - Added few more image processing kernels: Laplacian and bilateral filters.
+    - Fixed a potential crash in G-API's OpenCL backend.
 
 
 ![](images/speed.jpg)
