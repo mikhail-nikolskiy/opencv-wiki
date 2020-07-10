@@ -38,10 +38,13 @@ A tiny fraction of G-API tests requires external test data to be available. This
 export OPENCV_TEST_DATA_PATH=/path/to/opencv_extra/testdata
 ```
 
-When you build G-API with OpenVINO Inference Engine support (`-DInferenceEngine_DIR=...` `-DWITH_INF_ENGINE=ON`), some extra tests for inference are enabled and require `OPENCV_DNN_TEST_DATA_PATH` to be set and **models downloaded according to the [instruction](https://github.com/opencv/opencv/blob/master/modules/dnn/test/test_ie_models.cpp#L73)**!
+When you build G-API with OpenVINO Inference Engine support (`-DInferenceEngine_DIR=...` `-DWITH_INF_ENGINE=ON`), some extra tests for inference are enabled and require `OPENCV_DNN_TEST_DATA_PATH` to be set and **models downloaded** using the command below!
 
-```
+```bash
 export OPENCV_DNN_TEST_DATA_PATH=/path/to/opencv_extra/testdata/dnn
+openvino$ ./tools/downloader/downloader.py -o ${OPENCV_DNN_TEST_DATA_PATH}/omz_intel_models/2020.3.0 \
+    --cache_dir ${OPENCV_DNN_TEST_DATA_PATH}/.omz_cache/ \
+    --name age-gender-recognition-retail-0013
 ```
 
 Submitting G-API PRs
