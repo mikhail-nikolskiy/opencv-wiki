@@ -55,27 +55,19 @@ Highlights of this release:
     - Fixed a potential crash in G-API's OpenCL backend.
 
 
-![](images/speed.jpg)
-
-- Performance improvements:
-
-    - **TBD**
-
-
 ![](images/github2.png)
 
 - And many other great contributions from OpenCV community:
 
-    - Obj-C / Swift bindings [#17165](https://github.com/opencv/opencv/pull/17165)
+    - Obj-C / Swift bindings: [#17165](https://github.com/opencv/opencv/pull/17165)
 
-    - (opencv_contrib) Julia bindings as part of ongoing GSoC project [#2547](https://github.com/opencv/opencv_contrib/pull/2547)
+    - (opencv_contrib) Julia bindings as part of ongoing GSoC project: [#2547](https://github.com/opencv/opencv_contrib/pull/2547)
 
-    - (opencv_contrib) BIMEF: A Bio-Inspired Multi-Exposure Fusion Framework for Low-light Image Enhancement [#2448](https://github.com/opencv/opencv_contrib/pull/2448)
+    - (opencv_contrib) BIMEF: A Bio-Inspired Multi-Exposure Fusion Framework for Low-light Image Enhancement: [#2448](https://github.com/opencv/opencv_contrib/pull/2448)
 
-    - Enable Otsu thresholding for CV_16UC1 images [#16640](https://github.com/opencv/opencv/pull/16640)
+    - Enable Otsu thresholding for CV_16UC1 images: [#16640](https://github.com/opencv/opencv/pull/16640)
 
-    - Add Stroke Width Transform algorithm for Text Detection [#2464](https://github.com/opencv/opencv_contrib/pull/2464)
-
+    - Add Stroke Width Transform algorithm for Text Detection: [#2464](https://github.com/opencv/opencv_contrib/pull/2464)
 
 - Planned migration on Apache 2 license for next releases [OE-32](https://github.com/opencv/opencv/wiki/OE-32.--Change-OpenCV-License-to-Apache-2) [#17491](https://github.com/opencv/opencv/issues/17491)
 
