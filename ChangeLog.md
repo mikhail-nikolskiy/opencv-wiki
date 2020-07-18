@@ -2,10 +2,6 @@ OpenCV Change Logs
 ==================
 
 
-<details>
-
-<summary>Coming soon... 4.4.0 / 3.4.11</summary>
-
 version:4.4.0
 -------------
 
@@ -76,21 +72,151 @@ Highlights of this release:
 ### Contributors
 
 <details>
-<summary>opencv (XXX contributors)</summary>
+<summary>opencv (105 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.3.0..4.4.0
-TBD
+    78  Alexander Alekhin
+    19  Dmitry Kurtaev
+    19  Liubov Batanina
+    19  Maksim Shabunin
+    19  Tomoaki Teshima
+    15  YashasSamaga
+    11  Pierre-Emmanuel Viel
+     9  Anton Potapov
+     8  Alexander Smorkalov
+     8  Dmitry Matveev
+     8  Giles Payne
+     8  Ilya Lavrenov
+     6  Vadim Pisarevsky
+     5  Daniel Mallia
+     5  Ruslan Garnov
+     4  Woody Chow
+     4  Yosshi999
+     4  cyy
+     3  Boubacar
+     3  Dmitry Budnikov
+     3  Ganesh Kathiresan
+     3  Maxim Pashchenkov
+     3  Paul Jurczak
+     3  Vadim Levin
+     3  Yashas Samaga B L
+     3  pemmanuelviel
+     2  AshihsKrShrivastava
+     2  Chris Ballinger
+     2  Ilya Churaev
+     2  Jan Lebert
+     2  Michal W. Tarnowski
+     2  Namgoo Lee
+     2  Nesterov Alexander
+     2  Orest Chura
+     2  OrestChura
+     2  Philippe FOUBERT
+     2  Pinaev Danil
+     2  Suleyman TURKMEN
+     2  jsxyhelu
+     1  Adam Fowles
+     1  Alanli
+     1  Aleksandr Pertovskiy
+     1  Alex Cohn
+     1  Alex Studer
+     1  Anastasiya
+     1  Anatoliy Talamanov
+     1  AsyaPronina
+     1  Bao "Mantle" Rong
+     1  Ben
+     1  Ben Li
+     1  Christoph
+     1  Conrad Poelman
+     1  Egor Pugin
+     1  Fernando Martin
+     1  GFleishman
+     1  Gourav Roy
+     1  Hannes Achleitner
+     1  Heritier Kinke
+     1  HowardsPlayPen
+     1  Jan Tojnar
+     1  Jason Martin
+     1  Jessica Wong
+     1  Josh Bradley
+     1  Ken Shirriff
+     1  Martin Nowak
+     1  Mehdi Zakaria Benadel
+     1  Meng Wang
+     1  NesQl
+     1  Nicolas Roduit
+     1  Nikita Shulga
+     1  Ningxin Hu
+     1  Pierre Chatelier
+     1  Polina Smolnikova
+     1  QIU Xiaochen
+     1  R-penguins
+     1  Rasmus
+     1  Rasmus Diederichsen
+     1  Rui Hou
+     1  Satya Mallick
+     1  Sauhaarda Chowdhuri
+     1  Smirnov Alexey
+     1  Vahid Nikoofard
+     1  Vitaly Tuzov
+     1  Xiping Yan
+     1  YourButterfly
+     1  Yuriy Obukh
+     1  ab-dragon
+     1  albert-github
+     1  ashishiva3@gmail.com
+     1  berak
+     1  dev-tronifier
+     1  dmallia17
+     1  hn-88
+     1  jackson0223
+     1  jasonKercher
+     1  jshiwam
+     1  jumostedu
+     1  mehlukas
+     1  okamotoR
+     1  shijiayuan
+     1  shimat
+     1  spectralio
+     1  tpoisonooo
+     1  tweenietomatoes
+     1  woody.chow
 ```
 
 </details>
 
 <details>
-<summary>opencv_contrib (XXX contributors)</summary>
+<summary>opencv_contrib (27 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.3.0..4.4.0
-TBD
+     9  Tomoaki Teshima
+     6  Alexander Alekhin
+     6  Pavel Rojtberg
+     3  Paul Jurczak
+     2  Amy Tabb
+     2  Archit Rungta
+     2  Daniel Mallia
+     2  Namgoo Lee
+     2  Vishal Chiluka
+     2  catree
+     2  shimat
+     1  Ajit Pant
+     1  Akash Sharma
+     1  Devansh Batra
+     1  Jan Sellner
+     1  John Forrest
+     1  K Yasaswi Sri Chandra Gandhi
+     1  MaKaNu
+     1  Maksim Shabunin
+     1  Oded Green
+     1  QIU Xiaochen
+     1  Vadim Pisarevsky
+     1  Xavier Weber
+     1  archit120
+     1  berak
+     1  nosajthenitram
+     1  unknown
 ```
 
 </details>
@@ -103,9 +229,6 @@ version:3.4.11
 *July, 2020*
 
 OpenCV 3.4.11 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.4.0.
-
-
-</details>
 
 
 
