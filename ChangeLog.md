@@ -53,7 +53,7 @@ Highlights of this release:
 
 ![](images/github2.png)
 
-- And many other great contributions from OpenCV community:
+- And many other great contributions from OpenCV community, including, but not limited to:
 
     - Obj-C / Swift bindings: [#17165](https://github.com/opencv/opencv/pull/17165)
 
