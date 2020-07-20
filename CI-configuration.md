@@ -130,12 +130,14 @@ Android:
 DNN backends testing:
 - `ubuntu-openvino:16.04`
 - `ubuntu-openvino:18.04`
+- `ubuntu-openvino-2020.4.0:16.04`
 - `ubuntu-openvino-2020.3.0:16.04`, `ubuntu-openvino-2020.3.0:18.04`
 - `ubuntu-openvino-2020.2.0:16.04`
 - `ubuntu-openvino-2020.1.0:16.04`
 - `ubuntu-openvino-2019r3.0:16.04`
 - `ubuntu-vulkan:16.04` - for testing DNN Vulkan backend
-- `ubuntu-cuda:18.04` (`linux-?`) - CUDA 10.0 with CUDNN?
+- `ubuntu-cuda:18.04` (`linux-4`) - CUDA 10.0 with CUDNN?
+- `ubuntu-cuda11:18.04` (`linux-4`) - CUDA 11.0 with CUDNN 8
 
 Cross-compilation for other platforms:
 - `powerpc64le` (`linux-1,2,4` on `Custom` builder only) - validate VSX SIMD intrinsics. Extra external buildbot for [OpenCV on PowerPC](https://ocv-power.imavr.com/)
@@ -152,13 +154,19 @@ and many deprecated/special build_images for coverage/valgrind/etc
 - `msvs2015`, `msvs2015-win32`
 - `msvs2017`, `msvs2017-win32` (`windows-1`)
 - `msvs2019`, `msvs2019-win32` (`windows-1`)
-- `openvino-2020.3.0`, `openvino-2020.2.0`, `openvino-2020.1.0`, `openvino-2019r3.0`
+- `openvino-2020.4.0`, `openvino-2020.3.0`, `openvino-2020.2.0`, `openvino-2020.1.0`, `openvino-2019r3.0`
+- `winpack-dldt-*`, `winpack-dldt-*-debug` (`windows-1`)
+
+Build only:
+- `msvs2019-ws-x64` (`windows-1`) - WindowsStore
+- `msvs2019-arm64` (`windows-1`) - Windows ARM64
+- `cuda10`, `cuda11` (`windows-1`)
 
 Useful extra parameters: `test_opencl=ON`
 
 ### macOS X `build_image` list
 
-- `openvino-2020.3.0`, `openvino-2020.2.0`, `openvino-2020.1.0`, `openvino-2019r3.0`
+- `openvino-2020.4.0`, `openvino-2020.3.0`, `openvino-2020.2.0`, `openvino-2020.1.0`, `openvino-2019r3.0`
 - `osx_framework`
 
 
@@ -185,9 +193,9 @@ disable_ipp=ON
 - DNN testing (OpenVINO or new layers, tests set changes):
 ```
 force_builders=Custom,Custom Win,Custom Mac
-build_image:Custom=ubuntu-openvino-2020.3.0:16.04
-build_image:Custom Win=openvino-2020.3.0
-build_image:Custom Mac=openvino-2020.3.0
+build_image:Custom=ubuntu-openvino-2020.4.0:16.04
+build_image:Custom Win=openvino-2020.4.0
+build_image:Custom Mac=openvino-2020.4.0
 
 test_modules:Custom=dnn,python2,python3,java
 test_modules:Custom Win=dnn,python2,python3,java
