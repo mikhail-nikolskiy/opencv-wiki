@@ -55,7 +55,7 @@ Highlights of this release:
 
 - And many other great contributions from OpenCV community, including, but not limited to:
 
-    - Obj-C / Swift bindings: [#17165](https://github.com/opencv/opencv/pull/17165)
+    - [Obj-C / Swift bindings](https://medium.com/@gilespayne/opencv-4-4-lands-with-out-of-the-box-support-for-swift-and-objective-c-cdf3904066f1): [#17165](https://github.com/opencv/opencv/pull/17165)
 
     - (opencv_contrib) Julia bindings as part of ongoing GSoC project: [#2547](https://github.com/opencv/opencv_contrib/pull/2547)
 
