@@ -9,17 +9,23 @@ The logo was designed in 2006 by Adi Shavit. Redesigned in 2020 (https://opencv.
 
 ### Logo images
 
-![](logo/OpenCV_logo_no_text.png)
+#### Without text
 
 [Vector](https://raw.githubusercontent.com/wiki/opencv/opencv/logo/OpenCV_logo_no_text.svg?sanitize=true)
 
-![](logo/OpenCV_logo_black.png)
+![](logo/OpenCV_logo_no_text.png)
+
+#### Black text
 
 [Vector](https://raw.githubusercontent.com/wiki/opencv/opencv/logo/OpenCV_logo_black.svg?sanitize=true)
 
-![](logo/OpenCV_logo_white.png)
+![](logo/OpenCV_logo_black.png)
+
+#### White text
 
 [Vector](https://raw.githubusercontent.com/wiki/opencv/opencv/logo/OpenCV_logo_white.svg?sanitize=true)
+
+![](logo/OpenCV_logo_white.png)
 
 ### Original logo (2006)
 
