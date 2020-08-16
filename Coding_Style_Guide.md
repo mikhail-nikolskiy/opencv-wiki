@@ -30,13 +30,12 @@ File Structure
 - Every source file, except for the samples, starts with license header:
 
   ```.cpp
-  // This file is part of OpenCV project.
-  // It is subject to the license terms in the LICENSE file found in the top-level directory
-  // of this distribution and at http://opencv.org/license.html.
+  // This file is a part of OpenCV project.
+  // See opencv/LICENSE and http://opencv.org/license.html for the actual licensing terms.
   ```
 
-  OpenCV code license (BSD-compatible) can be found [here](https://github.com/opencv/opencv/blob/master/LICENSE).
-  The extra/different copyright clauses are possible (including adding your name into created file), as long as the   license stays BSD-compatible.
+  OpenCV code license (Apache 2.0) can be found [here](https://github.com/opencv/opencv/blob/master/LICENSE).
+  Below you can also put your copyright.
 
 - All the functionality must be put into `cv::` namespace, or nested namespace, e.g. `cv::vslam::`
 - Code lines should not be very long. Normally, they should be limited to **100** characters.
