@@ -37,4 +37,4 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * [[OE-30 - Color Calibration|OE-30.-Color-Calibration]]
 * (In Progress) [[OE-31 - Julia Bindings|OE-31.-Julia-Bindings]]
 * (In Progress) [[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]
-
+* [OE-33 - 3D Module](OE-33.-3D-Module)
