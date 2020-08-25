@@ -1,10 +1,10 @@
 # OpenCV 3D module
 
 * Authors: Rostislav Vasilikhin, Vadim Pisarevsky, Mihai Bujanca
-* Link: TBD (Here is the link to the corresponding feature request(s) should be provided)
+* Link: **TBD **(Here is the link to the corresponding feature request(s) should be provided)
 * Status: **Draft**
 * Platforms: **All**
-* Complexity: TBD (estimated complexity; certain amount of man-weeks, man-months etc.)
+* Complexity: **TBD **(estimated complexity; certain amount of man-weeks, man-months etc.)
 
 ## Introduction and Rationale
 
