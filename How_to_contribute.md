@@ -8,7 +8,7 @@ If you are not familiar with the mechanism - do not worry, it's very simple. Kee
 Before you start contributing you should
 ----------------------------------------
 
--   Make sure you agree to contribute your code under OpenCV (BSD) license.
+-   Make sure you agree to contribute your code under OpenCV (Apache 2.0) license.
 
 -   If you are submitting a new algorithm implementation, do a quick search over internet to see whether the algorithm is patented or not. **Note:** All new algorithms should go into [opencv_contrib](https://github.com/opencv/opencv_contrib) repository by default.
 
