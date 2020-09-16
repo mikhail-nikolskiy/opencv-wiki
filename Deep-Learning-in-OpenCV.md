@@ -8,26 +8,34 @@ The supported frameworks:
  * [TensorFlow](https://www.tensorflow.org/)
  * [Torch](http://torch.ch/)
  * [Darknet](https://pjreddie.com/darknet/)
- * Models in [ONNX](https://onnx.ai/) format
+ * Models in [ONNX](https://onnx.ai/) format (as the main method to import models from Pytorch)
 
 The supported layers:
 
  * AbsVal
+ * Accum
  * AveragePooling
  * BatchNormalization
+ * BNLL
  * Concatenation
  * Convolution (including dilated convolution)
  * Crop
+ * CropAndResize (RCNN-specific layer)
  * Deconvolution, a.k.a. transposed convolution or full convolution
  * DetectionOutput (SSD-specific layer)
  * Dropout
  * Eltwise (+, *, max)
+ * ELU
  * Flatten
  * FullyConnected
+ * FlowWarp
+ * Gather
+ * Interpolation
  * LRN
  * LSTM
  * MaxPooling
  * MaxUnpooling
+ * Mish
  * MVN
  * NormalizeBBox (SSD-specific layer)
  * Padding
@@ -36,16 +44,22 @@ The supported layers:
  * PReLU (including ChannelPReLU with channel-specific slopes)
  * PriorBox (SSD-specific layer)
  * ReLU
+ * Region (for DarkNet models)
+ * Reorg
+ * Resize
  * RNN
+ * ROI Pooling (RCNN-specific layer)
  * Scale
  * Shift
+ * ShuffleChannel
  * Sigmoid
  * Slice
  * Softmax
  * Split
+ * Swish
  * TanH
 
-The module includes some SSE, AVX, AVX2 and NEON acceleration of the performance-critical layers. There is also constantly-improved Halide backend. OpenCL (libdnn-based) backend is being developed and should be integrated after OpenCV 3.3 release. Here you may find the up-to-date benchmarking results: [[DNN Efficiency|DNN-Efficiency]]
+The module includes some SSE, AVX, AVX2 and NEON acceleration of the performance-critical layers as well as support of CUDA for the most of the layers. There is also constantly-improved Halide backend. OpenCL (libdnn-based) backend is being developed and should be integrated after OpenCV 3.3 release. Here you may find the up-to-date benchmarking results: [[DNN Efficiency|DNN-Efficiency]]
 
 The provided API (for C++ and Python) is very easy to use, just load the network and run it. Multiple inputs/outputs are supported. Here are the examples: https://github.com/opencv/opencv/tree/master/samples/dnn.
 
