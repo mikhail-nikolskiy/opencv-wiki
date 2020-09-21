@@ -155,7 +155,7 @@ The following networks have been tested and known to work:
 ---
 #### Text detection and Recognition
  * [EasyOCR](https://github.com/JaidedAI/EasyOCR) (PyTorch)
- * [CRNN] (https://github.com/meijieru/crnn.pytorch) (PyTorch)
+ * [CRNN](https://github.com/meijieru/crnn.pytorch) (PyTorch)
 
 ---
 ### Depth Estimation
