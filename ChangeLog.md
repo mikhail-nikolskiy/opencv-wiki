@@ -1,6 +1,95 @@
 OpenCV Change Logs
 ==================
 
+<details>
+
+<summary>Coming soon... 4.5.0 / 3.4.12</summary>
+
+version:4.5.0
+-------------
+
+*October, 2020*
+
+Fall update for OpenCV 4.x has been released!
+
+
+Highlights of this release:
+
+- OpenCV 4.5.0 licence has been changed to Apache 2: [[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]
+
+- OpenJPEG replaces Jasper in distributed Windows packages: [#18194](https://github.com/opencv/opencv/pull/18194)
+
+![](images/dnn.png)
+
+- DNN module:
+
+    - Improved layers / activations / supported more models:
+
+      - ONNX: TBD
+
+    - New samples / demos:
+
+      - TBD
+
+    - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+
+      - added support for OpenVINO 2021.1 release
+
+    - Fixes and optimizations in DNN CUDA backend (thanks to [@YashasSamaga](https://github.com/YashasSamaga)): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+dnn%22+cuda+milestone%3A4.5.0)
+
+
+![](images/gapi.png)
+
+- G-API module:
+
+    - G-API: Python bindings ([#17493](https://github.com/opencv/opencv/pull/17493))
+
+    - TBD
+
+
+![](images/github2.png)
+
+- And many other great contributions from OpenCV community:
+
+    - flann module fixes / improvements by [@pemmanuelviel](https://github.com/pemmanuelviel): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+flann%22+author%3Apemmanuelviel)
+
+    - Add Robot-World/Hand-Eye calibration function [#18203](https://github.com/opencv/opencv/pull/18203)
+
+    - TBD GSoC results
+
+
+### Contributors
+
+<details>
+<summary>opencv (XX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.4.0..4.5.0
+```
+
+</details>
+
+<details>
+<summary>opencv_contrib (XX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.4.0..4.5.0
+```
+
+</details>
+
+
+
+version:3.4.12
+-------------
+
+*October, 2020*
+
+OpenCV 3.4.12 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.5.0.
+
+</details>
+
+
 
 version:4.4.0
 -------------
