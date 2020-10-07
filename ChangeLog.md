@@ -42,10 +42,27 @@ Highlights of this release:
 
 - G-API module:
 
-    - G-API: Python bindings ([#17493](https://github.com/opencv/opencv/pull/17493))
+    - Added Python bindings for the general G-API ([#17493](https://github.com/opencv/opencv/pull/17493)), inference and streaming support are currently in progress.
 
-    - TBD
+    - Introduced serialization API, currently limited. A graph can be serialized to a byte stream (std::vector<char>) and then reconstructed back to a `cv::GComputation` object.
 
+    - OpenVINO NN backend has been moved to the latest OpenVINO "Core" APIs.
+
+    - Now it is easier to declare a graph with a dynamic number of inputs or outputs (`GIn()` / `GOut()` support `operator+=`).
+
+    - Added "mask", extended "convertTo" with 16S, also added performance tests on Core kernels for the Fluid backend.
+
+    - Added standard NN post-processing operations like `parseYolo` and `parseSSD` to turn NN results into a structured graph-based data format (e.g. `GArray<Rect>`).
+
+    - Added value initialization for `GArray<T>` so now one can write:
+      ```c++
+      cv::GArray<int> arr = std::vector<int> { 1, 2, 3 };
+      ```
+      to associate a `cv::GArray<>` with a value at graph construction stage.
+
+    - `cv::GMat` bitwise operators are extended with a `cv::GScalar` operand.
+
+    - Introduced a new graph data type `cv::GFrame` and its data storage type `cv::MediaFrame` to start handling media-oriented formats (like NV12 or YUV images with external memory) in the graph.
 
 ![](images/github2.png)
 
