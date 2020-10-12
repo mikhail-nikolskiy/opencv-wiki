@@ -1,9 +1,7 @@
 OpenCV Change Logs
 ==================
 
-<details>
 
-<summary>Coming soon... 4.5.0 / 3.4.12</summary>
 
 version:4.5.0
 -------------
@@ -19,17 +17,15 @@ Highlights of this release:
 
 - OpenJPEG replaces Jasper in distributed Windows packages: [#18194](https://github.com/opencv/opencv/pull/18194)
 
+- Added support for OpenCL multiple contexts
+
 ![](images/dnn.png)
 
 - DNN module:
 
     - Improved layers / activations / supported more models:
 
-      - ONNX: TBD
-
-    - New samples / demos:
-
-      - TBD
+      - ONNX: ReduceSum, Gather, improved Reshape
 
     - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
 
@@ -70,27 +66,132 @@ Highlights of this release:
 
     - flann module fixes / improvements by [@pemmanuelviel](https://github.com/pemmanuelviel): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+flann%22+author%3Apemmanuelviel)
 
-    - Add Robot-World/Hand-Eye calibration function [#18203](https://github.com/opencv/opencv/pull/18203)
+    - Add Robot-World/Hand-Eye calibration function: [#18203](https://github.com/opencv/opencv/pull/18203)
 
-    - TBD GSoC results
+    - [GSoC 2020](https://github.com/opencv/opencv/wiki/GSoC_2020) merged projects:
+
+      - GSoC: Better SIFT in the main repository
+
+      - GSoC: Improvement of Random Sample Consensus in OpenCV [#17683](https://github.com/opencv/opencv/pull/17683)
+
+      - GSoC: Real-time Single Object Tracking using Deep Learning: [#17647](https://github.com/opencv/opencv/pull/17647)
+
+      - GSoC: Revise/improve Text and Digit Recognition Samples: [#17675](https://github.com/opencv/opencv/pull/17675)
+
+      - GSoC: Optimize OpenCV for RISC-V: [#17922](https://github.com/opencv/opencv/pull/17922)
+
+      - GSoC (opencv_contrib): OpenCV bindings for Julia
+
+      - GSoC (opencv_contrib): Implement Macbeth Chart detector and AprilTag3: [#2532](https://github.com/opencv/opencv_contrib/pull/2532)
+
+      - GSoC (opencv_contrib): Depth Fusion for large scale environments [#2566](https://github.com/opencv/opencv_contrib/pull/2566)
 
 
 ### Contributors
 
 <details>
-<summary>opencv (XX contributors)</summary>
+<summary>opencv (68 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.4.0..4.5.0
+    47  Alexander Alekhin
+    10  Liubov Batanina
+     9  Giles Payne
+     9  Maksim Shabunin
+     9  Tomoaki Teshima
+     8  Anatoliy Talamanov
+     8  Ilya Churaev
+     7  Orest Chura
+     7  Pierre-Emmanuel Viel
+     6  Vadim Levin
+     5  Namgoo Lee
+     5  YashasSamaga
+     4  Alexey Smirnov
+     4  Dmitry Matveev
+     4  Maksym Ivashechkin
+     4  Suleyman TURKMEN
+     4  Vadim Pisarevsky
+     4  Yosshi999
+     4  catree
+     4  kadi soheib
+     4  pemmanuelviel
+     3  Aitik Gupta
+     3  Ruslan Garnov
+     3  danielenricocahall
+     2  Alessandro de Oliveira Faria (A.K.A.CABELO)
+     2  Alexander Smorkalov
+     2  Anastasiya(Asya) Pronina
+     2  Anna Petrovicheva
+     2  Danny
+     2  Dustin Rodrigues
+     2  Maksim Doronin
+     2  Maxim Pashchenkov
+     2  Sergei Slashchinin
+     2  Yashas Samaga B L
+     1  Alexey Lapshin
+     1  AsyaPronina
+     1  Christoph Gringmuth
+     1  Dervon
+     1  Dmitry Kurtaev
+     1  Elizarov Ilya
+     1  Florian Jung
+     1  Gabriel
+     1  Gary Bradski
+     1  Gil Shotan
+     1  Ian Maquignaz
+     1  Julien
+     1  Mario Emmenlauer
+     1  Nathan Godwin
+     1  NesQl
+     1  Odianosen Ejale
+     1  Pavel Rojtberg
+     1  Peter Rekdal Sunde
+     1  Rafael Sadowski
+     1  Shubham Dhumal
+     1  Shubham Singh
+     1  Sinitsina
+     1  Takehiro Kajihara
+     1  Yikun Jiang
+     1  Zhangyin
+     1  Zihao Mu
+     1  dmici
+     1  extrowerk
+     1  jinyup100
+     1  lpea
+     1  nhlsm
+     1  or-toledano
+     1  zhaoyue-zephyrus
+     1  zhuqiang00099
 ```
 
 </details>
 
 <details>
-<summary>opencv_contrib (XX contributors)</summary>
+<summary>opencv_contrib (21 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.4.0..4.5.0
+     4  Namgoo Lee
+     4  Pavel Rojtberg
+     4  Pierre-Emmanuel Viel
+     3  Archit Rungta
+     3  DumDereDum
+     3  Tomoaki Teshima
+     2  Dustin Rodrigues
+     2  Vadim Pisarevsky
+     2  pemmanuelviel
+     1  Ajit Pant
+     1  Alexander Alekhin
+     1  Elizarov Ilya
+     1  Gary Bradski
+     1  Giles Payne
+     1  Kumataro
+     1  Mary Chris Go
+     1  Nikita Shulga
+     1  arsaratovtsev
+     1  berak
+     1  cyy
+     1  dtmoodie
 ```
 
 </details>
@@ -103,8 +204,6 @@ version:3.4.12
 *October, 2020*
 
 OpenCV 3.4.12 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.5.0.
-
-</details>
 
 
 
