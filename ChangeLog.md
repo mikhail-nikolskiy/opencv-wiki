@@ -68,6 +68,8 @@ Highlights of this release:
 
     - Add Robot-World/Hand-Eye calibration function: [#18203](https://github.com/opencv/opencv/pull/18203)
 
+    - Improved build scripts to support for Apple Silicon by [Giles Payne](https://github.com/komakai): [#18094](https://github.com/opencv/opencv/pull/18094)
+
     - [GSoC 2020](https://github.com/opencv/opencv/wiki/GSoC_2020) merged projects:
 
       - GSoC: Better SIFT in the main repository
