@@ -24,7 +24,7 @@ Highlights of this release:
 
 And here is the picture:
 
-![](images/gsoc2020.png)
+![](images/gsoc2020.jpg)
 
 
 - OpenCV 4.5.0 licence has been changed to Apache 2: [[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]
