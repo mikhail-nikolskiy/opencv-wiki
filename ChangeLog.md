@@ -7,7 +7,7 @@ version:4.5.0
 
 *October, 2020*
 
-Fall update for OpenCV 4.x has been released!
+The fall update of OpenCV has been released!
 
 
 Highlights of this release:
