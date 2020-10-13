@@ -48,7 +48,7 @@ And here is the picture:
 
     - Our partner, OpenAI Lab, has further improved performance of OpenCV DNN on ARM using their new "Tengine lite", lighter-weight reimplementation of Tengine in C. Here is the performance chart:
 
-![](images/tengine_lite_perf.png)
+![](images/tengline_lite_perf.png)
 
 
 ![](images/gapi.png)
