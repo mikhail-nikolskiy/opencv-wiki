@@ -19,7 +19,7 @@ Highlights of this release:
    - Real-time Single Object Tracking using Deep Learning: [#17647](https://github.com/opencv/opencv/pull/17647)
    - Revise/improve Text and Digit Recognition Samples: [#17675](https://github.com/opencv/opencv/pull/17675)
    - Optimize OpenCV for RISC-V: [#17922](https://github.com/opencv/opencv/pull/17922)
-   - (opencv_contrib): OpenCV bindings for Julia
+   - (opencv_contrib): OpenCV bindings for Julia Programming Language ([tutorial](https://docs.opencv.org/master/d8/da4/tutorial_julia.html))
    - (opencv_contrib): Implement Macbeth Chart detector and AprilTag3: [#2532](https://github.com/opencv/opencv_contrib/pull/2532)
    - (opencv_contrib): Depth Fusion for large scale environments [#2566](https://github.com/opencv/opencv_contrib/pull/2566)
 
