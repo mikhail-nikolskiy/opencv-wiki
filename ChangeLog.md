@@ -12,7 +12,7 @@ Fall update for OpenCV 4.x has been released!
 
 Highlights of this release:
 
-- OpenCV 4.5.0 licence has been changed to Apache 2: [[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]
+- OpenCV licence has been changed to Apache 2: [[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]. Starting from OpenCV 4.5.0, all the future OpenCV 4.x and OpenCV 5.x releases will be distributed under Apache 2 license. OpenCV 3.x will keep using BSD.
 - [GSoC 2020](https://github.com/opencv/opencv/wiki/GSoC_2020) is over. It was one of the most productive GSoC "seasons"! All the projects are successful, and most of the results are already merged into OpenCV tree and available in 4.5.0 (in the main repository or in opencv_contrib). Here is the list of merged functionality:
    - Better SIFT in the main repository
    - Improvement of Random Sample Consensus in OpenCV [#17683](https://github.com/opencv/opencv/pull/17683)
