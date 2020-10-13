@@ -46,6 +46,8 @@ And here is the picture:
 
     - Fixes and optimizations in DNN CUDA backend (thanks to [@YashasSamaga](https://github.com/YashasSamaga)): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+dnn%22+cuda+milestone%3A4.5.0)
 
+    - Our partner, OpenAI Lab, has further improved performance of OpenCV DNN on ARM using their new "Tengine lite", lighter-weight reimplementation of Tengine in C. Here is the performance chart: ![](images/tengine_lite_perf.png)
+
 
 ![](images/gapi.png)
 
