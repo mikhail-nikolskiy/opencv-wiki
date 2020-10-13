@@ -13,24 +13,18 @@ Fall update for OpenCV 4.x has been released!
 Highlights of this release:
 
 - [GSoC 2020](https://github.com/opencv/opencv/wiki/GSoC_2020) is over. It was one of the most productive GSoC "seasons"! All the projects are successful, and most of the results are already merged into OpenCV tree and available in 4.5.0 (in the main repository or in opencv_contrib). Here is the list of merged functionality:
+   - Better SIFT in the main repository
+   - Improvement of Random Sample Consensus in OpenCV [#17683](https://github.com/opencv/opencv/pull/17683)
+   - Real-time Single Object Tracking using Deep Learning: [#17647](https://github.com/opencv/opencv/pull/17647)
+   - Revise/improve Text and Digit Recognition Samples: [#17675](https://github.com/opencv/opencv/pull/17675)
+   - Optimize OpenCV for RISC-V: [#17922](https://github.com/opencv/opencv/pull/17922)
+   - (opencv_contrib): OpenCV bindings for Julia
+   - (opencv_contrib): Implement Macbeth Chart detector and AprilTag3: [#2532](https://github.com/opencv/opencv_contrib/pull/2532)
+   - (opencv_contrib): Depth Fusion for large scale environments [#2566](https://github.com/opencv/opencv_contrib/pull/2566)
 
-      - Better SIFT in the main repository
+And here is the picture:
 
-      - Improvement of Random Sample Consensus in OpenCV [#17683](https://github.com/opencv/opencv/pull/17683)
-
-      - Real-time Single Object Tracking using Deep Learning: [#17647](https://github.com/opencv/opencv/pull/17647)
-
-      - Revise/improve Text and Digit Recognition Samples: [#17675](https://github.com/opencv/opencv/pull/17675)
-
-      - Optimize OpenCV for RISC-V: [#17922](https://github.com/opencv/opencv/pull/17922)
-
-      - (opencv_contrib): OpenCV bindings for Julia
-
-      - (opencv_contrib): Implement Macbeth Chart detector and AprilTag3: [#2532](https://github.com/opencv/opencv_contrib/pull/2532)
-
-      - (opencv_contrib): Depth Fusion for large scale environments [#2566](https://github.com/opencv/opencv_contrib/pull/2566)
-
-  And here is the picture: ![](images/gsoc2020.png)
+![](images/gsoc2020.png)
 
 
 - OpenCV 4.5.0 licence has been changed to Apache 2: [[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]
