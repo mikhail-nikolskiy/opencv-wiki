@@ -25,7 +25,7 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * [OE-18 - Optflow Module](OE-18.-Module-Optflow)
 * [OE-19 - Stereo Module](OE-19.-Module-Stereo)
 * [OE-20 - Calibration Module](OE-20.-Module-Calibration)
-* (In Progress) [OE-21 - Tracking Module](OE-21.-Module-Tracking)
+* (In Progress) [OE-21 - Tracking API](OE-21.-Tracking-API)
 * (In Progress) [OE-22 - Point Cloud Module](OE-22.-Module-Point-Cloud)
 * (DONE) ~~[OE-23 - Graph API Module](OE-23.-Module-GAPI)~~
 * [OE-24 - Revised HighGUI Module](OE-24.-Module-HighGUI)
