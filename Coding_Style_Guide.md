@@ -1,7 +1,7 @@
 The OpenCV Coding Style Guide
 =============================
 
-The document is a short guide on code style, used in OpenCV. The core libraries (`core`, `imgproc`, etc) are written in C++, so the document concerns only the C++ code style.
+The document is a short guide on code style, used in OpenCV. The modules (`core`, `imgproc`, etc) are written in C++, so the document concerns only the C++ code style.
 
 General Comments about Writing OpenCV code
 ------------------------------------------
