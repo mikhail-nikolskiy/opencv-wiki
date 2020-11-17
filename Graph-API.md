@@ -13,6 +13,24 @@ What it is?
 
 * G-API GPU backend implements the majority of available functions and allows to run OpenCL kernels on available OpenCL-programmable devices. At the moment, GPU backend is based on OpenCV Transparent API; in future versions it will be extended to support integration of arbitrary OpenCL kernels (and likely be renamed to "OpenCL backend").
 
+* G-API ONNX backend implements [ONNX models](https://github.com/onnx/models) inference operations on input data and outputs the results. At the moment, ONNX backend is based on [ONNX Runtime](https://github.com/microsoft/onnxruntime) C/C++ API.
+    #### How to build with ONNX RT:
+    * Build and install the ONNX RT (currently tested with v1.5.1):
+    ```bash
+     $ git clone --recursive https://github.com/microsoft/onnxruntime.git
+     $ cd onnxruntime
+     $ git checkout v1.5.1
+     $ git submodule update --init
+     $ ./build.sh --config Release --build_shared_lib --parallel \
+     $     --cmake_extra_defines CMAKE_INSTALL_PREFIX=install
+     $ cd build/Linux/Release
+     $ make install
+    ```
+    * Then specify extra options to OpenCV CMake:    
+    ```bash
+     $ cmake /path-to-opencv -DWITH_ONNX=ON -DORT_INSTALL_DIR=/path-to-ort-install-dir
+    ```
+
 Testing G-API
 =============
 
@@ -37,6 +55,7 @@ A tiny fraction of G-API tests requires external test data to be available. This
 ```
 export OPENCV_TEST_DATA_PATH=/path/to/opencv_extra/testdata
 ```
+## With OpenVINO Inference Engine
 
 When you build G-API with OpenVINO Inference Engine support (`-DInferenceEngine_DIR=...` `-DWITH_INF_ENGINE=ON`), some extra tests for inference are enabled and require `OPENCV_DNN_TEST_DATA_PATH` to be set and **models downloaded** using the command below!
 
@@ -45,6 +64,18 @@ export OPENCV_DNN_TEST_DATA_PATH=/path/to/opencv_extra/testdata/dnn
 openvino$ ./tools/downloader/downloader.py -o ${OPENCV_DNN_TEST_DATA_PATH}/omz_intel_models/2020.3.0 \
     --cache_dir ${OPENCV_DNN_TEST_DATA_PATH}/.omz_cache/ \
     --name age-gender-recognition-retail-0013
+```
+## With ONNX Runtime
+
+When you build G-API with ONNX Runtime support, tests for inference are enabled and require `OPENCV_GAPI_ONNX_MODEL_PATH` to be set:
+```bash
+$ export OPENCV_GAPI_ONNX_MODEL_PATH=/path-to/onnx-models/
+```
+and [models](https://github.com/onnx/models) downloaded using the commands:
+```bash
+$ git clone --recursive https://github.com/onnx/models.git
+$ cd models
+$ git lfs pull --include=path-to-desired-onnx-model --exclude=""
 ```
 
 Submitting G-API PRs
