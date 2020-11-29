@@ -1,6 +1,109 @@
 OpenCV Change Logs
 ==================
 
+<details>
+
+<summary>Coming soon... 4.5.1 / 3.4.13</summary>
+
+version:4.5.1
+-------------
+
+*December, 2020*
+
+New Year's update for OpenCV 4.x has been released.
+
+
+**Highlights of this release**:
+
+- OpenCV repository reached over **50k stars** on GitHub: Thank you to all for your contribution in this great project!
+
+- Continued merging of [GSoC 2020](https://github.com/opencv/opencv/wiki/GSoC_2020) results:
+
+    - Develop OpenCV.js DNN modules for promising web use cases together with their tutorials ([#18064](https://github.com/opencv/opencv/pull/18064))
+
+    - OpenCV.js: WASM SIMD optimization 2.0 ([#18068](https://github.com/opencv/opencv/pull/18068))
+
+    - High Level API and Samples for Scene Text Detection and Recognition ([#17570](https://github.com/opencv/opencv/pull/17570))
+
+
+![](images/dnn.png)
+
+- DNN module:
+
+    - Improved layers / activations / supported more models:
+
+      - optimized: 1D convolution, 1D pool
+      - fixed: Resize, ReduceMean, Gather with multiple outputs, importing of Faster RCNN ONNX model
+      - added support: INT32 ONNX tensors
+
+    - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+
+      - added support for OpenVINO 2021.2 release
+      - added preview support for HDDL
+
+    - Fixes and optimizations in DNN CUDA backend (thanks to [@YashasSamaga](https://github.com/YashasSamaga)): [PRs](https://github.com/opencv/opencv/pulls?q=is%3Apr+label%3A%22category%3A+dnn%22+cuda+milestone%3A4.5.1)
+
+![](images/gapi.png)
+
+- G-API module:
+
+    - TBD
+
+![](images/github2.png)
+
+- And many other great contributions from OpenCV community:
+
+    - objdetect: Detection and decoding of curved QR-codes: [#18003](https://github.com/opencv/opencv/pull/18003)
+
+    - calib3d: Added SQPnP algorithm to SolvePnP: [#18371](https://github.com/opencv/opencv/pull/18371)
+
+    - stitching: add warpPointBackward to warpers: [#18607](https://github.com/opencv/opencv/pull/18607)
+
+    - stitching: support similarity masks: [#18624](https://github.com/opencv/opencv/pull/18624)
+
+    - stitching: add WAVE_CORRECT_AUTO: [#18646](https://github.com/opencv/opencv/pull/18646)
+
+    - (opencv_contrib) Color Calibration Algorithm Implementation Revised: [#2671](https://github.com/opencv/opencv_contrib/pull/2671)
+
+    - (opencv_contrib) Tbmr features (purely topological adaptation on MSER): [#2713](https://github.com/opencv/opencv_contrib/pull/2713)
+
+    - (opencv_contrib) Added Python wrapping and documentation for alphamat module: [#2729](https://github.com/opencv/opencv_contrib/pull/2729)
+
+    - video: added definition of Tracking API with ported GOTURN and MIL trackers from opencv_contrib: [18838](https://github.com/opencv/opencv/pull/18838)
+
+
+### Contributors
+
+<details>
+<summary>opencv (XX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.5.0..4.5.1
+```
+
+</details>
+
+<details>
+<summary>opencv_contrib (XX contributors)</summary>
+
+```
+git shortlog --no-merges -ns 4.5.0..4.5.1
+```
+
+</details>
+
+
+
+version:3.4.13
+-------------
+
+*December, 2020*
+
+OpenCV 3.4.13 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.5.1.
+
+</details>
+
+
 
 version:4.5.0
 -------------
