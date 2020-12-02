@@ -15,7 +15,9 @@ The major directions for 5.0 release are:
 
 Let's now discuss the major new/changed things in 5.x.
 
-# New License
+# Highlights
+
+## New License
 
 It's done already. OpenCV has migrated to Apache 2 license:
   * Evolution proposal with rationale and the details: https://github.com/opencv/opencv/wiki/OE-32.--Change-OpenCV-License-to-Apache-2
@@ -27,29 +29,29 @@ It's time to upgrade requirements to the commonly available versions of the main
 
 Also, after 20 years of service it's finally time for C API to completely disappear from OpenCV. Some bits of C API can be retained internally, but will not be exposed anymore.
 
-# (?) Modules
+## (?) Modules
 
 Likely not in OpenCV 5.0, but in some further OpenCV 5.x releases, when OpenCV is compiled as C++ 20 library, we are going to compile OpenCV modules as C++ modules. Unfortunately, different compilers offer slightly different implementations of this very useful concept, and it's not quite mature yet, but the advantages are clear, and we will be working on it.
 
-# Named parameters in complex algorithms
+## Named parameters in complex algorithms
 
 The goal is to provide cleaner, easier to use API for complex algorithms. See https://github.com/opencv/opencv/wiki/OE-34.-Named-Parameters.
 This change is compatible with modern versions of clang, GCC and MSVC (C++ 20 needs to be enabled in the case of MSVC), and it also perfectly maps to Python and Swift languages, even though the binding generators need to be updated.
 
-# More convenient error reporting and logging. Easier debugging. 
+## More convenient error reporting and logging. Easier debugging. 
 
 One thing where we can definitely make life for OpenCV developers and contributors easier is logging and better error reporting. Probably, we can adopt GoogleTest-like macros, e.g. CV_ASSERT_LT, CV_ASSERT_TRUE etc. maybe even something more advanced if modern C++ standards allow that. Those macros should let, just like in GTest, optional “<< “message” parts. The old error codes, now used in OpenCV, are mostly obsolete. We should keep this API for compatibility and still store error code in cv::Exception. But new macros should just do checks and provide a convenient way to supply extra error messages.
 
 There should be convenient and unified logging capabilities across the whole library. See https://github.com/opencv/opencv/wiki/OE-11.-Logging
 
-# Improved matrix calculus/linear algebra support in OpenCV
+## Improved matrix calculus/linear algebra support in OpenCV
 
 Lapack (a subset of it) is now always available in OpenCV; see https://github.com/opencv/opencv/wiki/OE-12.-Lapack.
 In order to reduce fragmentation and the number of branches to tests, `Eigen` calls will be gradually eliminated from the library and replaced with either Lapack or our own matrix operations. For Eigen+OpenCV users the conversions functions from OpenCV matrix types to/from Eigen matrices will still be available.
 
 Speaking of our own matrix operations, a decent quaternion support has been recently added (https://github.com/opencv/opencv/pull/18335) and is being improved.
 
-# Extended set of basic types; built-in color space information
+## Extended set of basic types; built-in color space information
 
 In OpenCV 4.x the following data types are supported:
 
@@ -69,7 +71,9 @@ Another proposed feature attempts to answer one of the old questions from OpenCV
 
 The proposed solution: add `colorspace` field to `cv::Mat`. By default, each new mat is initialized with `colorspace=COLOR_GENERIC` and so it behaves as usual. But we modify some popular functions to copy the source image color space into the destination image. `cv::resize()`, `cv::warpAffine()`, `Mat::copyTo()`, `cv::GaussianBlur()`, `cv::flip()` are examples of such functions. Modify `cv::cvtColor()`, `cv::imread()` and `VideCapture::retrieve()` to set the proper colorspace; modify `cv::imwrite()`, `cv::dnn::Net::forward()` to handle the colorspace properly. That does not seem to be many changes, but it will probably help to eliminate some bugs. Note that currently it's planned to introduce only RGB-related colorspace values (`COLOR_RGB`, `COLOR_BGR`), not YUV, HSV, Lab or such — they all will map to `COLOR_GENERIC`.
 
-4. Improvements in DNN
+## Improvements in DNN
+
+Firs of all, it 
 4.1. Modular architecture with external DNN backends
 This feature would be useful at least for 2 reasons:
 It will let people create other DNN backends without touching OpenCV DNN code itself. We want to keep OpenCV DNN a popular framework for inference, and so we may still want people to contribute their backends to OpenCV and we will integrate them. That will help to avoid custom forks and fragmentation (at the cost of extra pressure on the core team). But a dedicated backend API with more or less isolated implementations of  backends will let us/users configure OpenCV more easily and disable/enable certain backends. Some unstable backends can be moved to opencv_contrib and polished there.
