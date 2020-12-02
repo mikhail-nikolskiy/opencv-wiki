@@ -1,5 +1,5 @@
-How to contribute to the OpenCV repository
-==========================================
+How to contribute to OpenCV
+===========================
 
 We suppose that you've seen the [contribute](https://opencv.org/about.html#Contribute) page, and now, as an enthusiastic coder, want to contribute some code. For that purpose OpenCV project now has a mirror on the GitHub, to simplify everybody's life! All the bug fixes, new functionality, new tutorials etc. should be submitted via the GitHub's mechanism of pull requests.
 
