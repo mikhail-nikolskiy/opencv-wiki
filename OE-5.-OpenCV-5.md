@@ -1,6 +1,6 @@
 [Draft]
 * Author: Vadim Pisarevsky with many inputs from OpenCV team
-* Link: https://github.com/opencv/opencv/issues/11039
+* Link: https://github.com/opencv/opencv/issues/18995
 * Status: Open
 * Platforms: All
 * Complexity: A few man-years
