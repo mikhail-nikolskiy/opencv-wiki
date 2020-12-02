@@ -38,3 +38,4 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * (DONE) ~~[[OE-31 - Julia Bindings|OE-31.-Julia-Bindings]]~~
 * (DONE) ~~[[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]~~
 * (In Progress) [OE-33 - 3D Module](OE-33.-3D-Module)
+* [OE-34 - Named Parameters](OE-34.-Named-Parameters)
