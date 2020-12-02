@@ -23,7 +23,7 @@ It's done already. OpenCV has migrated to Apache 2 license:
   * Evolution proposal with rationale and the details: https://github.com/opencv/opencv/wiki/OE-32.--Change-OpenCV-License-to-Apache-2
   * OpenCV 4.5.0 announcement: https://opencv.org/opencv-4-5-0/
 
-# C++14 as the minimum required version of C++. Drop C API.
+## C++14 as the minimum required version of C++. Drop C API.
 
 It's time to upgrade requirements to the commonly available versions of the main languages that we use in OpenCV. By the way, modern 4.x versions of OpenCV already support C++ 14, C++ 17 and even C++ 20. At the same time, we drop support of earlier versions of C++ for leaner, more efficient code and to lighten the support burden.
 
@@ -73,56 +73,63 @@ The proposed solution: add `colorspace` field to `cv::Mat`. By default, each new
 
 ## Improvements in DNN
 
-Firs of all, it 
-4.1. Modular architecture with external DNN backends
+[TODO] this needs to be put into a separate evolution proposal
+
+### Modular architecture with external DNN backends
+
 This feature would be useful at least for 2 reasons:
-It will let people create other DNN backends without touching OpenCV DNN code itself. We want to keep OpenCV DNN a popular framework for inference, and so we may still want people to contribute their backends to OpenCV and we will integrate them. That will help to avoid custom forks and fragmentation (at the cost of extra pressure on the core team). But a dedicated backend API with more or less isolated implementations of  backends will let us/users configure OpenCV more easily and disable/enable certain backends. Some unstable backends can be moved to opencv_contrib and polished there.
-It will make OpenCV DNN architecture more modular and more scalable. We will clearly separate the engine (including memory manager, graph manager, fusion etc.), the importers and the layers. We will see more clearly how much freedom, and what level of customization different backends need. This will let us further improve DNN without making it a complete mess.
+  1. It will let people create other DNN backends without touching OpenCV DNN code itself. We want to keep OpenCV DNN a popular framework for inference, and so we may still want people to contribute their backends to OpenCV and we will integrate them. That will help to avoid custom forks and fragmentation (at the cost of extra pressure on the core team). But a dedicated backend API with more or less isolated implementations of  backends will let us/users configure OpenCV more easily and disable/enable certain backends. Some unstable backends can be moved to opencv_contrib and polished there.
+  2. Create opportunities for the further growth. We will clearly separate the engine (including memory manager, graph manager, fusion etc.), the importers and the layers. We will see more clearly how much freedom, and what level of customization different backends need. This will let us further improve DNN without making it a complete mess.
+
 Perhaps, the backend engine API should be specified in C++, not in C, but it should be a few purely abstract C++ classes (cv::Algorithm style API). As long as some backend implementation provides smart pointers to those interfaces, we could use it.
-4.2. Automatic model loading with caching for samples (at least in Python samples, but preferably in C++ as well)
-This item may also be relevant for traditional vision samples, but it’s critical for deep learning samples. Many of them need some models and most of those models we are not able to put directly into the OpenCV repository. We already have some scripts, such as download_models.py, and also the similar script in the Open Model Zoo. We just need to move this functionality onto the level of cv2.so (maybe it will be a small script embedded into .so, or it can be a standard script in the same directory as cv2.so). OpenCV samples should just specify the URL and md5/sha checksum. End users might also need to specify some path where to store the model (with reasonable default value). Everything else should be done automatically.
-The related PR: https://github.com/opencv/opencv/pull/12186 
-4.3. Better efficiency of DNN on ARM, NVidia, RISC-V etc.
-The work is already in progress; here we just state that performance will be dramatically improved on various architectures (on NVidia GPUs it’s basically the case already).
 
-First-class RISC-V support will also be added (using universal intrinsics). In OpenCV 5.0 it will be initial support that will further be extended in OpenCV 5.x.
-4.4. [TBD: probably it should also be some new features related to more universal ONNX/PyTorch/TF support etc.] ???
-5. 3D Vision
-See the separate document https://docs.google.com/document/d/1tfO7ZMFv3r5LvOfeZV2H2sB8DtnoEW1EMzWa5lJ7dkY  
-6. G-API
-TBD
-7. TBD. Improvements in Video I/O and UI
-OpenGL(+Vulkan?) based rendering (GLFW as the main backend? It’s compact, cross-platform, no dependencies, good license; we can even implement a part of opencv_viz module directly in OpenGL without using VTK): see https://github.com/opencv/opencv/wiki/OE-24.-Module-HighGUI 
-Good support for real fonts (system-based + toolkit based + libfreetype)
-Faster Video I/O, asynchronous video I/O. Use std::future as option? E.g. capture the first frame before the loop, inside the loop asynchronously capture the next one. Get the previously captured and process it while the videoio captures the next. If it works well, we can modify all the samples this way.
-Finally, customizable video writers (bitrate, …)
+### Automatic model loading with caching for samples (at least in Python samples, but preferably in C++ as well).
 
-https://github.com/econsystems/opencv_v4l2 (possible video capturing acceleration via V4L)
-Extensions to VideoCapture to support depth sensors (stereo, lidars, ToF, …)
+This item may also be relevant for traditional vision samples, but it’s critical for deep learning samples. They should be able to download models automatically from various places. See https://github.com/opencv/opencv/pull/18591.
 
-8. More serious testing of complex algorithms
-The goal for OpenCV 5.0 is not to reorganize all the testing of complex algorithms this way, but rather establish and present/document methodology, which we will further use for other parts of OpenCV, existing and newly added ones. The examples of such complex algorithms or tasks:
-Face detection
-Face analysis (age/gender/emotions/facial features etc.)
-Chessboard/circles/aruco/april tag pattern detection
-QR code detection
-Circle, line detection
-Text detection and recognition
-Tracking
-Stereo
-People detection
-Visual odometry
-Image registration (homography, fundamental matrix, essential matrix …)
-...
+### Better efficiency of DNN on ARM, NVidia, RISC-V etc.
 
-It should probably be put into a separate evolution proposal, but the idea has been discussed already.
+The work is already in progress; here we just state that performance will be dramatically improved on various architectures (on NVidia GPUs it’s basically the case already). Another big topic is support for specialized deep learning accelerators (so-called VPU's, NPU's, TPU's etc.). But the modular architecture seems to be a strong prerequisite for such activities. 
+
+## RISC-V support
+
+OpenCV provides universal intrinsics for a few years already, and so it's convenient to port it to the new hardware this way. RISC-V is emerging platform for edge computing and we are glad to support it in OpenCV. This is now work in progress, thanks to T-head (https://github.com/opencv/opencv/pull/18394) and the Chinese Academy of Science (https://github.com/opencv/opencv/pull/18228).
+
+## State-of-art 3D Module
+
+See https://github.com/opencv/opencv/wiki/OE-33.-3D-Module.
+
+## Improvements in UI
+
+* See https://github.com/opencv/opencv/wiki/OE-24.-Module-HighGUI
+* One of the big topics is done already; OpenCV 5.0-pre (next branch) supports truetype fonts: https://github.com/opencv/opencv/pull/18760.
+
+## More serious testing of complex algorithms
+
+[TODO] make a separate evolution proposal about it.
+
+The goal for OpenCV 5.x is to establish the solid testing methodology for complex algorithms, i.e. depart from simple "smoke" or "toy" tests that just check that functions do not crash to more serious tests that will evaluate performance and probably speed of the complex algorithms on real datasets or their substantial subsets. Here are some examples of such complex algorithms, where more serious testing methodology will be very useful:
+  * Face detection
+  * Face analysis (age/gender/emotions/facial features etc.)
+  * Chessboard/circles/aruco/april tag pattern detection
+  * QR code detection
+  * Circle, line detection
+  * Text detection and recognition
+  * Tracking
+  * Stereo
+  * People detection
+  * Visual odometry
+  * Image registration (homography, fundamental matrix, essential matrix …)
+
 Use some public benchmarks/datasets to test complex OpenCV algorithms, instead of testing the algorithms on just a few samples, which does not show real quality and does not help to catch real regressions.
 It should probably be some light/express testing mode when only a small part of the benchmark/dataset is used (just a few dozens of samples perhaps); and then it should be more or less complete nightly or weekly testing where the whole dataset or its substantial part is used.
 Some integral metric is computed and compared to the reference one. There can also be checks for individual samples to catch abnormal behaviour (e.g. some bugs in the code are introduced that affect just a few test cases without affecting integral characteristics).
 The datasets should be downloadable using the same technique as we currently use to download deep learning models.
 
 In the next phase we can also consider benchmarks that are not assumed to be run locally, but rather require a part of OpenCV with the tested algorithm to be compiled and sent to a server for remote testing. This can hardly be automated and run reliably, but later we can consider it as well. Here the primary goal is not to participate in various competitions, but to test complex OpenCV algorithms much more extensively than we do now.
-9. Improved Documentation (Navigation, Appearance, …)
+
+## Improved Documentation
+
 Improving documentation, especially for such a big and complex project as OpenCV, is an endless story, but we have to do it constantly. With migration from Sphinx to Doxygen the documentation has become more complete for sure, but at the same time the old documentation perhaps looks better and has a very convenient navigation pane on the left. CUDA documentation, highly praised by developers, also uses a similar approach.
 
 The documentation should have more “hand-written” style with less auto-generated almost empty descriptions with little source code snippets etc.
@@ -131,3 +138,4 @@ It would be nice to have “Python mode” when all the specifications are autom
 A special tool (initially and @pre-commit) should check the link consistency.
 These and several other important things to improve are already outlined in a separate document: https://github.com/opencv/opencv/wiki/Documentation-improvement-plan. It’s probably a good time to start implementing it. The plan is to continue to use Doxygen or at least a tool that can parse headers and is compatible with Doxygen, but to heavily customize the produced HTML files.
 
+See also https://github.com/opencv/opencv/pull/18712.
