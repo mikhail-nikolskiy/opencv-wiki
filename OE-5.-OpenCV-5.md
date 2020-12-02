@@ -1,3 +1,10 @@
+[Draft]
+* Author: Vadim Pisarevsky with many inputs from OpenCV team
+* Link: https://github.com/opencv/opencv/issues/11039
+* Status: Open
+* Platforms: All
+* Complexity: A few man-years
+
 # Introduction
 
 OpenCV 5.0 is the 20-th year anniversary release, initially scheduled for 2020, although the gold release will likely happen in 2021 (as of the moment of writing this document in 2020 December). First of all, as anniversary release, it should be great and should be a strong statement that OpenCV is here, it’s modern, up-to-date library and it is going to retain its title of one of the most popular CV API in the world. Also, since it’s a major release, it’s another good chance to fix some things in a bit more radical way than we can in minor updates. But on the other hand, it should continue the tradition started with OpenCV 2.x – i.e. be a modular C++ library with a rather stable API, so that it should be more or less easy to migrate to it from the previous versions of OpenCV.
