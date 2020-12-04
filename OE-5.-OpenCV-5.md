@@ -98,6 +98,19 @@ This item may also be relevant for traditional vision samples, but it’s critic
 
 The work is already in progress; here we just state that performance will be dramatically improved on various architectures (on NVidia GPUs it’s basically the case already). Another big topic is support for specialized deep learning accelerators (so-called VPU's, NPU's, TPU's etc.). But the modular architecture seems to be a strong prerequisite for such activities. 
 
+## Python improvements
+
+**TODO** move it to a separate evolution proposal
+
+* drop Python 2.x
+* make Python module a directory with binary blob cv2.so and pure python wrappers for some functionality, such as:
+   * filestorage I/O
+   * code to download DNN models and other files from internet (see above)
+   * multi-file reader: https://github.com/opencv/opencv/pull/17753
+   * etc.
+* extend Python bindings generator to support named arguments: https://github.com/opencv/opencv/wiki/OE-34.-Named-Parameters
+* official PIP module with proper build script
+
 ## RISC-V support
 
 OpenCV provides universal intrinsics for a few years already, and so it's convenient to port it to the new hardware this way. RISC-V is emerging platform for edge computing and we are glad to support it in OpenCV. This is now work in progress, thanks to T-head (https://github.com/opencv/opencv/pull/18394) and the Chinese Academy of Science (https://github.com/opencv/opencv/pull/18228).
@@ -105,6 +118,12 @@ OpenCV provides universal intrinsics for a few years already, and so it's conven
 ## State-of-art 3D Module
 
 See https://github.com/opencv/opencv/wiki/OE-33.-3D-Module.
+
+## Tracking module
+
+(More detailed description)
+Some of the best OpenCV trackers are moved from opencv_contrib/tracking and more deep learning trackers are added.
+Already in master: https://github.com/opencv/opencv/pull/18838
 
 ## Improvements in UI
 
