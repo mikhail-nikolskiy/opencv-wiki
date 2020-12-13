@@ -70,7 +70,7 @@ In OpenCV 4.x the following data types are supported:
 
 and also the "uniform" tuples of such numbers, such as CV_8UC3 (3-tuple of bytes), CV_32FC2 (a pair of floating-point numbers) etc.
 
-Until recently, this value set was sufficient. But now, when people are interested in efficient deep learning and, in general, low-power computing, some new interesting formats appeared, such as `bfloat16` and various flavors of `posit`. Of course, it can be very impractical to implement the whole set of OpenCV operations for each data type. Even current data types are not universally supported in OpenCV. But still it would be useful to be able to represent various data types and let users implement the missing algorithms.
+Until recently, this value set was sufficient. But now, when people are interested in efficient deep learning and, in general, low-power computing, some new interesting formats appeared, such as `bfloat16` and various flavors of `posit`. Of course, it can be very impractical to implement the whole set of OpenCV operations for each data type. Even the current data types are not universally supported in OpenCV. But still it would be useful to be able to represent various data types and let users implement the missing algorithms.
 
 Since the beginning of the library and till now we allocate just 3 bits to specify the "depth", i.e. the type of each data channel, and all 8 options are already taken, as you may see. The solution is to extend this number to, e.g., 8 bits. Then we have a plenty of space for new types. 
 
@@ -113,7 +113,7 @@ The work is already in progress; here we just state that performance will be dra
 
 ## RISC-V support
 
-OpenCV provides universal intrinsics for a few years already, and so it's convenient to port it to the new hardware this way. RISC-V is emerging platform for edge computing and we are glad to support it in OpenCV. This is now work in progress, thanks to T-head (https://github.com/opencv/opencv/pull/18394) and the Chinese Academy of Science (https://github.com/opencv/opencv/pull/18228).
+OpenCV provides universal intrinsics for a few years already, and so it's convenient to port it to the new hardware this way. RISC-V is emerging platform for edge computing and we are glad to support it in OpenCV. This is now work in progress, thanks to T-head (https://github.com/opencv/opencv/pull/18394) and Institute of Software, Chinese Academy of Science (https://github.com/opencv/opencv/pull/18228).
 
 ## State-of-art 3D Module
 
