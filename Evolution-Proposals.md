@@ -12,8 +12,8 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * [OE-1 - OpenCV 1.x C API Maintainance](OE-1.-Old-C-API)
 * [OE-2 - OpenCV 2.x Maintainance](OE-2.-OpenCV-2)
 * [OE-3 - OpenCV 3.x Maintainance](OE-3.-OpenCV-3)
-* [OE-4 - OpenCV 4.0](OE-4.-OpenCV-4)
-* [OE-5 - OpenCV 5.0](OE-5.-OpenCV-5)
+* [OE-4 - OpenCV 4.0 Maintainance](OE-4.-OpenCV-4)
+* (In Progress) [OE-5 - OpenCV 5.0](OE-5.-OpenCV-5)
 * OE-6 to OE-9 are reserved for OpenCV 6.0 to 9.0
 * (DONE) ~~[OE-10 - FP16 Support](OE-10.-FP16)~~
 * [OE-11 - Add Logging](OE-11.-Logging)
@@ -39,4 +39,4 @@ The pool of evolution proposals can then be used to plan GSoC projects, as the l
 * (DONE) ~~[[OE-31 - Julia Bindings|OE-31.-Julia-Bindings]]~~
 * (DONE) ~~[[OE-32 - Change OpenCV License to Apache 2|OE-32.--Change-OpenCV-License-to-Apache-2]]~~
 * (In Progress) [OE-33 - 3D Module](OE-33.-3D-Module)
-* [OE-34 - Named Parameters](OE-34.-Named-Parameters)
+* (In Progress) [OE-34 - Named Parameters](OE-34.-Named-Parameters)
