@@ -49,6 +49,12 @@ New Year's update for OpenCV 4.x has been released.
 
     - TBD
 
+![](images/riscv.png)
+
+- Significant progress on RISC-V port.
+   
+    - much more complete RISC-V backend of [universal intrinsics](https://docs.opencv.org/master/df/d91/group__core__hal__intrin.html) has been contributed by Yin Zhang from ISCAS. It is based on the latest RVV (RISC-V vector extension) 0.9.
+
 ![](images/github2.png)
 
 - And many other great contributions from OpenCV community:
