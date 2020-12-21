@@ -47,7 +47,34 @@ New Year's update for OpenCV 4.x has been released.
 
 - G-API module:
 
-    - TBD
+    - G-API Framework:
+  
+      - Introduced serialization for `cv::RMat`, including serialization for user-defined memory adapters ([#18584](https://github.com/opencv/opencv/pull/18584));
+      - Introduced `desync`, a new Operation for in-graph asynchronous execution - to allow different parts of the graph run with a different latency ([#18673](https://github.com/opencv/opencv/pull/18673));
+      - Introduced a notion of "in-graph metadata" ([#18793](https://github.com/opencv/opencv/pull/18793)), now various media-related information can be accessed in graph directly (currently only limited to timestamps and frame IDs);
+      - Introduced a new generic task-based executor, based on Threading Building Blocks (TBB) ([#17851](https://github.com/opencv/opencv/pull/17851));
+      - Extended `infer<>()` API to accept a new `cv::GFrame` data structure to allow handling of various media formats without changes in the graph structure ([#19002](https://github.com/opencv/opencv/pull/19002));
+      - Made `copy()` an intrinsic where real copy may not happen (optimized out) based on graph structure, extended it to support `cv::GFrame` ([#19009](https://github.com/opencv/opencv/pull/19009)), ([#19112](https://github.com/opencv/opencv/pull/19112));
+      - Various fixes, including addressig static analysis, documentation, and test issues;
+
+    - G-API Operations:
+
+      - Introduced new operations `morphologyEx` ([#18652](https://github.com/opencv/opencv/pull/18652)), `boundingRect` ([#18510](https://github.com/opencv/opencv/pull/18510)), `fitLine` ([#18790](https://github.com/opencv/opencv/pull/18790)), `kmeans` ([#18857](https://github.com/opencv/opencv/pull/18857)), Background Subtractor ([#18674](https://github.com/opencv/opencv/pull/18674)), Kalman filter ([#18869](https://github.com/opencv/opencv/pull/18869));
+
+    - Intel® Inference Engine backend ( [OpenVINO™](https://software.intel.com/en-us/openvino-toolkit) ):
+
+      - Extended `cv::gapi::ie::Params<>` to import CNN networks (e.g. pre-compiled ones) instead of passing .XML and .BIN files ([#18542](https://github.com/opencv/opencv/pull/18542)); also enabled configuring Inference Engine plugins via this structure ([#18701](https://github.com/opencv/opencv/pull/18701));
+      - Added a new overload to `infer<>()` to run inference over a single region of interest ([#18673](https://github.com/opencv/opencv/pull/18701));
+      - Added support for `cv::MediaFrame` input data type (projected from `cv::GFrame`) and handling for NV12 input image format ([#19002](https://github.com/opencv/opencv/pull/19002));
+
+    - Microsoft® ONNX Runtime backend:
+
+      - Introduced a new inference backend, powered by Microsoft ONNX Runtime ([#18716](https://github.com/opencv/opencv/pull/18716)), follow [this instruction](https://github.com/opencv/opencv/wiki/Graph-API#with-onnx-runtime) to enable ONNX Runtime support in G-API;
+
+    - Python bindings:
+
+      - Exposed G-API's Inference ([#18491](https://github.com/opencv/opencv/pull/18491)) and Streaming ([#18493](https://github.com/opencv/opencv/pull/18493)) APIs in the OpenCV Python bindings;
+      - Added initial Python support for `cv::GArray` data structure ([#18762](https://github.com/opencv/opencv/pull/18762));
 
 ![](images/riscv.png)
 
