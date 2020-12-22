@@ -1,9 +1,6 @@
 OpenCV Change Logs
 ==================
 
-<details>
-
-<summary>Coming soon... 4.5.1 / 3.4.13</summary>
 
 version:4.5.1
 -------------
@@ -24,6 +21,8 @@ New Year's update for OpenCV 4.x has been released.
     - OpenCV.js: WASM SIMD optimization 2.0 ([#18068](https://github.com/opencv/opencv/pull/18068))
 
     - High Level API and Samples for Scene Text Detection and Recognition ([#17570](https://github.com/opencv/opencv/pull/17570))
+
+    - SIFT: SIMD optimization of GaussianBlur 16U ([#18983](https://github.com/opencv/opencv/pull/18983))
 
 
 ![](images/dnn.png)
@@ -80,7 +79,15 @@ New Year's update for OpenCV 4.x has been released.
 
 - Significant progress on RISC-V port.
    
-    - much more complete RISC-V backend of [universal intrinsics](https://docs.opencv.org/master/df/d91/group__core__hal__intrin.html) has been contributed by Yin Zhang from ISCAS. It is based on the latest RVV (RISC-V vector extension) 0.9.
+    - much more complete RISC-V backend of [universal intrinsics](https://docs.opencv.org/4.5.1/df/d91/group__core__hal__intrin.html) has been contributed by Yin Zhang from ISCAS. It is based on the latest RVV (RISC-V vector extension) 0.9.
+
+![](images/rtfm.png)
+
+- Documentation:
+
+    - Updated structure of [tutorials](https://docs.opencv.org/4.5.1/d9/df8/tutorial_root.html)
+
+    - Revised installation tutorials [content](https://docs.opencv.org/4.5.1/df/d65/tutorial_table_of_content_introduction.html)
 
 ![](images/github2.png)
 
@@ -104,23 +111,139 @@ New Year's update for OpenCV 4.x has been released.
 
     - video: added definition of Tracking API with ported GOTURN and MIL trackers from opencv_contrib: [18838](https://github.com/opencv/opencv/pull/18838)
 
+    - (opencv_contrib) Add libSGM into cudastereo: [#2772](https://github.com/opencv/opencv_contrib/pull/2772)
+
+    - (opencv_contrib) Add BEBLID local feature descriptor: [#2774](https://github.com/opencv/opencv_contrib/pull/2774)
+
+
 
 ### Contributors
 
 <details>
-<summary>opencv (XX contributors)</summary>
+<summary>opencv (88 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.5.0..4.5.1
+    87  Alexander Alekhin
+    10  Anatoliy Talamanov
+     8  Ruslan Garnov
+     6  Dmitry Matveev
+     6  Maksim Shabunin
+     6  Orest Chura
+     5  Jonathan Cole
+     5  Sergei Slashchinin
+     4  Anna Khakimova
+     4  Anton Potapov
+     4  Giles Payne
+     4  Igor Murzov
+     4  Maxim Pashchenkov
+     4  Vincent Rabaud
+     3  Alexander Smorkalov
+     3  Anastasia Murzova
+     3  Dale Phurrough
+     3  Ian Maquignaz
+     3  Liubov Batanina
+     2  Aitik Gupta
+     2  Anastasiya Pronina
+     2  Chris Ballinger
+     2  OrestChura
+     2  Quentin Chateau
+     2  Roman Kazantsev
+     2  Sergey Slashchinin
+     2  Steffen Urban
+     2  Welton Rodrigo Torres Nascimento
+     2  catree
+     2  mtfrctl
+     1  APrigarina
+     1  Alexey Smirnov
+     1  Andreas Franek
+     1  Anton Veselskyi
+     1  AsyaPronina
+     1  Christos Malliaridis
+     1  Clement Courbet
+     1  Daniel Cauchi
+     1  Daniel Motilla
+     1  Dmitry Budnikov
+     1  Felix Gorschlüter
+     1  Francesco Petrogalli
+     1  Gabriel Nascarella Hishida
+     1  Hollow Man
+     1  Jack·Boos·Yu
+     1  Jaime Rivera
+     1  Jiri Kucera
+     1  Joe
+     1  Jojo R
+     1  Jose Quaresma
+     1  Julien
+     1  Justin Frank
+     1  Kong Liangqian
+     1  Krushnal Patel
+     1  Kun Liang
+     1  Mark Shachkov
+     1  Martin Štefaňák
+     1  Michael Gruner
+     1  Mikkel Green
+     1  Nathan Godwin
+     1  Nikolai
+     1  Omar Alzaibaq
+     1  Or Avital
+     1  Pavel Grunt
+     1  Pavel Rojtberg
+     1  Randall Britten
+     1  Rob Timpe
+     1  Suleyman TURKMEN
+     1  Vadim Levin
+     1  Vadim Pisarevsky
+     1  Wenqing Zhang
+     1  YashasSamaga
+     1  Yiming Li
+     1  Yosshi999
+     1  ZhangYin
+     1  Zhangyin
+     1  Zhiming-Zeng
+     1  Zhiyuan Chen
+     1  ann
+     1  arodrigu
+     1  berak
+     1  chargerKong
+     1  joshdoe
+     1  junxnone
+     1  lizz
+     1  masa-iwm
+     1  maxint
+     1  shioko
 ```
 
 </details>
 
 <details>
-<summary>opencv_contrib (XX contributors)</summary>
+<summary>opencv_contrib (23 contributors)</summary>
 
 ```
 git shortlog --no-merges -ns 4.5.0..4.5.1
+    12  Alexander Alekhin
+     3  DumDereDum
+     2  Akash Sharma
+     1  Enrico Ronconi
+     1  EricFlorin
+     1  Iago Suárez
+     1  Igor Murzov
+     1  Kong Liangqian
+     1  Kumataro
+     1  Matthias Berberich
+     1  Paul Jurczak
+     1  Rob Timpe
+     1  Shingo Otsuka
+     1  Steffen Urban
+     1  TT
+     1  Vincent Rabaud
+     1  Yuriy Obukh
+     1  Zhiju Cen
+     1  crownedone
+     1  cudawarped
+     1  riskiest
+     1  sunitanyk
+     1  unknown
 ```
 
 </details>
@@ -133,8 +256,6 @@ version:3.4.13
 *December, 2020*
 
 OpenCV 3.4.13 has been released. Bug fixes, optimizations and other enhancements are propagated into OpenCV 4.5.1.
-
-</details>
 
 
 
