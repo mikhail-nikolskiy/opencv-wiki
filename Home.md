@@ -7,7 +7,7 @@ General resources
 - :globe_with_meridians: [Official site](https://opencv.org/) - read about the library, subscribe to the [news](https://opencv.org/news.html), browse [releases](https://opencv.org/releases.html) and study the [license](https://opencv.org/license.html)
 
 - :question: [FAQ](FAQ) list of frequently asked questions and answers  moderated by the core team
-- :speech_balloon: [Q&A forum](http://answers.opencv.org) - ask questions and share your knowledge by answering others' questions
+- :speech_balloon: [Q&A forum](https://forum.opencv.org) - ask questions and share your knowledge by answering others' questions
 
 - :books: [Documentation](https://docs.opencv.org/):
     - latest releases: [4.5.1](https://docs.opencv.org/4.5.1), [3.4.13](https://docs.opencv.org/3.4.13)
@@ -31,7 +31,6 @@ Development
     - [opencv](https://github.com/opencv/opencv/issues) - general problems with the library and stable modules, build-related problems
     - [opencv_contrib](https://github.com/opencv/opencv_contrib/issues) - problems with experimental modules and their dependencies
     - [opencv.org](https://github.com/opencv-infrastructure/opencv.org/issues) - problems with the official site
-    - [answers.opencv.org](https://github.com/opencv-infrastructure/answers.opencv.org/issues) - problems with the Q&A forum
 
 - New feature ideas :bulb::
     - [OpenCV Evolution](https://github.com/opencv/opencv/wiki/Evolution-Proposals)
