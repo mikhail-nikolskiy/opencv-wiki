@@ -8,12 +8,14 @@ h3. Leadership meeting
  * Satya Mallick
  * Anna Petrovicheva
  * Vadim Pisarevsky
+ * Vincent Rabaud
  * Edgar Riba
+ * Aleksandr Voron
 
 
 h3. Schedule
 
- * Meets every Tuesdays at 9am Pacific Time via Skype.
+ * Meets every Wednesday at 8am Pacific Time via Hangouts.
 
 h3. Notes
 
