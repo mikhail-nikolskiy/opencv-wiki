@@ -1,11 +1,11 @@
 This wiki describes how to work with object detection models trained using [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection). OpenCV 3.4.1 or higher is required.
 
 ## Run network in TensorFlow
-Deep learning networks in TensorFlow are represented as graphs where an every node is a transformation of it's inputs. They could be common layers like `Convolution` or `MaxPooling` and implemented in C++. Custom layers could be built from existing TensorFlow operations in python.
+Deep learning networks in TensorFlow are represented as graphs where every node is a transformation of its inputs. They could be common layers like `Convolution` or `MaxPooling` and implemented in C++. Custom layers could be built from existing TensorFlow operations in python.
 
-TensorFlow object detection API is a framework for creating deep learning networks that solve object detection problem. There are already trained models in [Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). You can build you own model as well.
+TensorFlow object detection API is a framework for creating deep learning networks that solve object detection problem. There are already trained models in [Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). You can build your own model as well.
 
-The result of training is a binary file with extension `.pb` contains both topology and weights of trained network. You may download one of them from Model Zoo, in example `ssd_mobilenet_v1_coco` (MobileNet-SSD trained on COCO dataset).
+The result of training is a binary file with extension `.pb` contains both topology and weights of the trained network. You may download one of them from Model Zoo, in example `ssd_mobilenet_v1_coco` (MobileNet-SSD trained on COCO dataset).
 
 Create and run a python script to test a model on specific picture:
 ```python
@@ -59,7 +59,7 @@ cv.waitKey()
 OpenCV needs an extra configuration file to import object detection models from TensorFlow. It's based on a text version of the same serialized graph in protocol buffers format (protobuf).
 
 ### Use existing config file for your model
-You can use one of the configs that has been tested in OpenCV. Choose it depends on your model and TensorFlow version:
+You can use one of the configs that has been tested in OpenCV. This choice depends on your model and TensorFlow version:
 
 | Model | Version | ||
 |-------|-------------|----|----|
@@ -74,7 +74,7 @@ You can use one of the configs that has been tested in OpenCV. Choose it depends
 | EfficientDet-D0 (see [#17384](https://github.com/opencv/opencv/pull/17384)) | | [weights](https://www.dropbox.com/s/9mqp99fd2tpuqn6/efficientdet-d0.pb?dl=1) | [config](https://github.com/opencv/opencv_extra/blob/master/testdata/dnn/efficientdet-d0.pbtxt)
 
 ### Generate a config file
-Use one of scripts which generate a text graph representation for a frozen `.pb` model depends on it's architecture:
+Use one of the scripts which generate a text graph representation for a frozen `.pb` model depends on its architecture:
 * [tf_text_graph_ssd.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_ssd.py)
 * [tf_text_graph_faster_rcnn.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_faster_rcnn.py)
 * [tf_text_graph_mask_rcnn.py](https://github.com/opencv/opencv/blob/master/samples/dnn/tf_text_graph_mask_rcnn.py)
