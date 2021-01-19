@@ -8,7 +8,7 @@ Have you done your homework? Let's check it:
 
 # Please check that you use the "latest version":http://opencv.org/downloads.html of OpenCV4Android. Please also check "Release_Notes":Android_Release_Notes.
 # Please check the open "Android issues":http://code.opencv.org/projects/opencv/issues?query_id=4 on the tracker.
-# Ask "community":http://www.answers.opencv.org/ about your problem. May be your question was already "asked":http://www.answers.opencv.org/questions/scope:all/sort:activity-desc/tags:android/page:1/?
+# Ask "community": https://forum.opencv.org/ about your problem.
 
 If you submit a ticket, please provide the correct "Category" name - @android@. If you could not identify the cause of the error, please provide the following information in your ticket:
 * Version number of Android platform (all 3 components of the version - for example: 4.0.4). If you use custom ROM, name and version, for example cyanogenmod 9;

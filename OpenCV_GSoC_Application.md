@@ -218,7 +218,7 @@ https://github.com/opencv/opencv/wiki/GSoC_2020
 
 https://groups.yahoo.com/neo/groups/OpenCV/info
 
-http://answers.opencv.org/questions/
+https://forum.opencv.org/
 
 opencv-gsoc-2020@googlegroups.com
 

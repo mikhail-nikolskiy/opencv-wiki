@@ -16,7 +16,7 @@ Before you start contributing you should
 
 -   Make sure that nobody beat you into fixing or reporting the issue by doing a search on the Github [OpenCV issues page](https://github.com/opencv/opencv/issues), and making sure that there isn't someone working on it. In the latter case you might provide support or suggestion in the issue or in the linked pull request.
 
--   If you have a question about the software, then this is **NOT** the right place. You should open up a question at the [OpenCV Q&A forum](http://answers.opencv.org/questions/). In order to post a decent question from the start, feel free to read the official [forum guidelines](http://answers.opencv.org/faq/).
+-   If you have a question about the software, then this is **NOT** the right place. You should open up a question at the [OpenCV Q&A forum](https://forum.opencv.org/). In order to post a decent question from the start, feel free to read the official [forum guidelines](https://forum.opencv.org/faq/).
 
 Before you open up anything on the OpenCV GitHub page, be sure that you are at the right place with your problem.
 
