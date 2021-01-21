@@ -9,7 +9,7 @@ GSoC has been invaluable to OpenCV because the fields of computer vision and dee
 
 Coding for OpenCV benefits the students with visible modern code https://github.com/opencv/opencv/wiki/Coding_Style_Guide in a hot field. The admin co-founded two companies with former GSoC student that sold to Google in 2013 (Industrial Perception Inc), and Matterport in 2019 (Arraiy). We've co-written papers with advanced students and have placed students and mentors in various companies, including Google (https://www.linkedin.com/in/vincent-rabaud-3b592268/?originalSubdomain=fr).
 
-Some video of past GSoC contributions: (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
+Some video of past GSoC contributions: (2020: https://studio.youtube.com/video/9dAMAvh2Em4/edit) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
 
 ### How many potential mentors have agreed to mentor this year?
 
@@ -43,6 +43,7 @@ Yes were were a mentoring org
 
 | Year | Success | Total |
 |:----:|:-------:|:-----:|
+| 2020 | 13      | 13    |
 | 2019 | 8       | 10    |
 | 2017 | 14      | 17    |
 | 2016 | 11      | 12    |
