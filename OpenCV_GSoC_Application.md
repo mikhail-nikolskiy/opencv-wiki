@@ -64,8 +64,7 @@ Yes were were a mentoring org
 
 * Vincent Rabaud
    * vincent dot rabaud at google.com
-* Kurt Konolige 
-   * konolige at google.com
+
 
 ### Are you part of an umbrella org?
 
