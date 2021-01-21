@@ -26,7 +26,6 @@
     - [[Contributors]]
     - [[Meeting notes|Meeting_notes]]
         - [[2021]]
-        - [[2020]]
     - [[QA for OpenCV|QA_in_OpenCV]]
         - [[Using performance tests|HowToUsePerfTests]]
         - [[Writing performance tests|HowToWritePerfTests]]
