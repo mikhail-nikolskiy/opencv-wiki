@@ -9,7 +9,7 @@ GSoC has been invaluable to OpenCV because the fields of computer vision and dee
 
 Coding for OpenCV benefits the students with visible modern code https://github.com/opencv/opencv/wiki/Coding_Style_Guide in a hot field. The admin co-founded two companies with former GSoC student that sold to Google in 2013 (Industrial Perception Inc), and Matterport in 2019 (Arraiy). We've co-written papers with advanced students and have placed students and mentors in various companies, including Google (https://www.linkedin.com/in/vincent-rabaud-3b592268/?originalSubdomain=fr).
 
-Some video of past GSoC contributions: (2020: https://studio.youtube.com/video/9dAMAvh2Em4/edit) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
+Some video of past GSoC contributions: (2020: https://studio.youtube.com/video/9dAMAvh2Em4) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
 
 ### How many potential mentors have agreed to mentor this year?
 
@@ -21,7 +21,7 @@ All our mentors are known contributors to OpenCV and we always have backup mento
 
 ### How will you help your students stay on schedule to complete their projects?
 
-Students are required to fill out a schedule in their application. They start the summer with a pull requests that must pass the build bot, documentation, Google unit test and example of use. They must meet with Mentors at least once a week (unless prior excuse) and fill out periodic progress logs and students are failed if they do not have an accepted start, middle and finished pull request. At the end, students are required to submit a Youtube video showing their results, see for example: (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA) where each student has their "moment of fame". We have been doing this many years now and have a well-tested system to generate good results while training students in proper coding tools and style. We generate further enthusiasm by regularly doing joint conference papers with exceptional students. The admin is well known in the field and getting good references is further motivation.
+Students are required to fill out a schedule in their application. They start the summer with a pull requests that must pass the build bot, documentation, Google unit test and example of use. They must meet with Mentors at least once a week (unless prior excuse) and fill out periodic progress logs and students are failed if they do not have an accepted start, middle and finished pull request. At the end, students are required to submit a Youtube video showing their results, see for example: (2020: https://studio.youtube.com/video/9dAMAvh2Em4) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA) where each student has their "moment of fame". We have been doing this many years now and have a well-tested system to generate good results while training students in proper coding tools and style. We generate further enthusiasm by regularly doing joint conference papers with exceptional students. The admin is well known in the field and getting good references is further motivation.
 
 ### How will you get your students involved in your community during GSoC?
 
