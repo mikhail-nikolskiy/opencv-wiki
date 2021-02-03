@@ -3,13 +3,24 @@ OpenCV GSoC Application
 
 ### Why does your org want to participate in Google Summer of Code?
 
-OpenCV (Open Source Computer Vision Library, ~1M downloads/week) is a library of computer and deep learning vision routines widely used in Google itself.
+OpenCV (Open Source Computer Vision Library, 1-2M downloads/week) is a library of computer and deep learning vision routines used around the world and in Google itself.
+
+The simple answer to the question is that GSoC both introduces our org to a new set of people we may not have had a chance to interact with otherwise, and gives our mentors a chance to work on contributions to the library that they wanted to see done but had not found the resources to do.
 
 GSoC has been invaluable to OpenCV because the fields of computer vision and deep learning are rapidly evolving and the "extra hands" provided by GSoC help the library stay current with the latest routines.
 
-Coding for OpenCV benefits the students with visible modern code https://github.com/opencv/opencv/wiki/Coding_Style_Guide in a hot field. The admin co-founded two companies with former GSoC student that sold to Google in 2013 (Industrial Perception Inc), and Matterport in 2019 (Arraiy). We've co-written papers with advanced students and have placed students and mentors in various companies, including Google (https://www.linkedin.com/in/vincent-rabaud-3b592268/?originalSubdomain=fr).
+Coding for OpenCV benefits the students with visible modern code https://github.com/opencv/opencv/wiki/Coding_Style_Guide in a hot field. The admin co-founded two companies with a former GSoC student one which sold to Google in 2013 (Industrial Perception Inc), and another which sold to Matterport in 2019 (Arraiy). We've co-written papers with advanced students and have placed students and mentors in various companies, including Google (https://www.linkedin.com/in/vincent-rabaud-3b592268/?originalSubdomain=fr).
 
-Some video of past GSoC contributions: (2020: https://studio.youtube.com/video/9dAMAvh2Em4) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
+Some video of past GSoC contributions: (2020: https://youtu.be/9dAMAvh2Em4) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
+
+### What would your org consider to be a successful summer?
+
+A successful summer is one where a supermajority of the projects (14/14 in 2020) become accepted pull requests having passed the functionality, unit test, style checks, docs, built bots, and pull master. We believe this goal produces the maximal benefit both to the students and to the org.
+ 
+We carefully select the students and the mentors to achieve this. In addition, the admin likes to see one published paper come out by at least one student-mentor pair.
+
+
+
 
 ### How many potential mentors have agreed to mentor this year?
 
@@ -17,7 +28,9 @@ Some video of past GSoC contributions: (2020: https://studio.youtube.com/video/9
 
 ### How will you keep mentors engaged with their students?
 
-All our mentors are known contributors to OpenCV and we always have backup mentors who can swap in, but mainly help newer mentors. There are always backup mentors to swap in to cover summer vacations. Most mentors are either Professors, graduate students, experienced engineers or engineering managers that have experience in managing students and interns. We have weekly meetings on progress and track students on shared Google docs. Mentors are required to have a minimum of one weekly meeting with mentors and email contact is shared and open to admins who monitor contact. The first milestone is to create a pull request and mentors are required to critique it. These pull requests continue throughout the summer until the final pull requests that must be accepted by the mentor if the student is not to fail. Mentors are required to make sure the students pass the build bot, have google unit tests, examples of use and extensive documentation ( https://docs.opencv.org/ ).
+All our mentors are known contributors to OpenCV and we always have backup mentors who can swap in, but mainly help newer mentors. There are always backup mentors to swap in to cover summer vacations. Most mentors are either Professors, graduate students, experienced engineers or engineering managers that have experience in managing students and interns. We have weekly meetings on progress and track students on shared Google docs. 
+
+Mentors are required to have a minimum of one weekly meeting with mentors and email contact is shared and open to admins who monitor contact. The first milestone is to create a pull request and mentors are required to critique it. These pull requests continue throughout the summer until the final pull requests that must be accepted by the mentor if the student is not to fail. Mentors are required to make sure the students pass the build bot, have google unit tests, examples of use and extensive documentation ( https://docs.opencv.org/ ).
 
 ### How will you help your students stay on schedule to complete their projects?
 
@@ -25,11 +38,18 @@ Students are required to fill out a schedule in their application. They start th
 
 ### How will you get your students involved in your community during GSoC?
 
-Open, ongoing communication is held on a mailing list dedicated to that year's GSoC and Github provides further community chatter. Many of us attend the big vision conferences over the summer (CVPR)  and meetups are held there. There is an IRC channel for questions and comments as well as an active community email list with much Q&A where we will encourage students to ask and answer questions. All work, students and mentors are listed on an open page that stays "forever" so that they can find each other. This year we are going to encourage ongoing social media updates of visual results to Facebook, Instagram, LinkedIn and Snap Chat. We sometimes co-write papers with top students.
+Open, ongoing communication is held on a mailing list dedicated to that year's GSoC and Github provides further community chatter. Many of us attend the big vision conferences (pre and post Covid) over the summer (CVPR) and meetups are held there. There is an IRC channel for questions and comments as well as an active community email list together with a Q&A forum (very active, see https://answers.opencv.org/questions/  ) where we encourage students to ask and answer questions. All work, students and mentors are listed on an open page that stays "forever" so that they can find each other. We sometimes co-write papers with top students.
+ 
+Mainly, students get and stay involved by actual contributed code and documentation. They are required to immediately create a pull request that grows and grows over the summer.
+
 
 ### How will you keep your students involved with your community after GSoC?
 
-The main way is by getting the students completely familiar and comfortable with Github and the ease of doing small changes and PRs, especially in documentation and tutorials. Since OpenCV 3.0 (& now 4.0) is refactored into very modular components, contributing code in opencv_contrib https://github.com/opencv/opencv_contrib, is easier/more self-contained/easy to maintain. This makes it more likely that students will continue to contribute their own published work as pull requests. In addition, students sometimes do joint papers with mentors which means ongoing communication and contribution. Many students become interns and later hire "targets" by managers in companies that use/contribute to OpenCV. OpenCV is far and away the largest computer vision library with over 4 million downloads per month and so they know that contributions are a competitive advantage/resume item for future jobs. In addition, it's a good way to get good references from well-known people working in the field.
+The best way is by getting the students comfortable with Github and with having them complete accepted pull requests. This makes them feel confident as contributing members of a community which is key to staying involved. 
+
+Since OpenCV is factored into modular components, contributing code in opencv_contrib https://github.com/opencv/opencv_contrib, is self-contained and easy to do in small chunks which makes it easier for a busy student or later professional to stay involved by quick contributions or bug fixes. 
+Students sometimes do joint papers with mentors which means ongoing communication and contribution. Students become interns and hire "targets" by managers in companies that use/contribute to OpenCV. OpenCV is the largest computer vision library with 1-2 million downloads per week and so they know that contributions are a competitive advantage/resume item for future jobs. In addition, it's a good way to get good references from well-known people working in the field.
+
 
 ### Were you a mentoring org before?
 
@@ -43,16 +63,16 @@ Yes were were a mentoring org
 
 | Year | Success | Total |
 |:----:|:-------:|:-----:|
-| 2020 | 13      | 13    |
-| 2019 | 8       | 10    |
-| 2017 | 14      | 17    |
-| 2016 | 11      | 12    |
-| 2015 | 14      | 15    |
-| 2014 | 15      | 15    |
-| 2013 | 12      | 13    |
-| 2012 | 10      | 11    |
-| 2011 | 9       | 11    |
-| 2010 | 8       | 9     |
+| 2020: | 14/     | 14;  |
+| 2019: | 8/      | 10;  |
+| 2017: | 14/     | 17;  |
+| 2016: | 11/     | 12;  |
+| 2015: | 14/     | 15;  |
+| 2014: | 15/     | 15;  |
+| 2013: | 12/     | 13;  |
+| 2012: | 10/     | 11;  |
+| 2011: | 9/      | 11;  |
+| 2010: | 8/      | 9.   |
 
 (2019 8/10; 2017 14/17; 2016 11/12; 2015 14/15; 2014 15/15; 2013 12/13; 2012 10/11; 2011 9/11; 2010 8/9)
 
@@ -87,8 +107,14 @@ No
 
 ### Anything else we should know?
 
-OpenCV is used extensively inside Google. See googler Vincent Rabaud
-vincent.rabaud@gmail.com. He is a contributor. We are a very active library (over 4M downloads/month) under intense development (see the releases: https://opencv.org/releases/, and recent change logs: https://github.com/opencv/opencv/wiki/ChangeLog, and meeting notes https://github.com/opencv/opencv/wiki/Meeting_notes). We are used in virtually every university and every business that deals with computer vision.
+OpenCV is used extensively inside Google, see Vincent Rabaud vincent.rabaud@gmail.com. We have 1-2M /week & are under active development (see  git pulse:
+
+https://github.com/opencv/opencv_contrib/pulse/monthly
+
+And the releases: 
+
+https://opencv.org/releases/, and recent change logs: https://github.com/opencv/opencv/wiki/ChangeLog, and meeting notes https://github.com/opencv/opencv/wiki/Meeting_notes). 
+We are used in virtually every university and every business that deals with computer vision.
 ------------------------------------------------------------------------
 
 OpenCV Profile:
@@ -108,7 +134,7 @@ https://github.com/opencv/opencv/wiki/images/OpenCV_Logo_with_text.png
 
 ### Primary Open Source License
 
-BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
+Apache 2
 
 ### Organization Category:
 
@@ -121,6 +147,10 @@ c/c++
 python 3
 
 javascript
+
+OpenGL
+
+Cuda
 
 ### Topic Tags:
 
@@ -142,7 +172,7 @@ embedded systems
 
 ### Ideas List:
 
-https://github.com/opencv/opencv/wiki/GSoC_2020
+https://github.com/opencv/opencv/wiki/GSoC_2021
 
 ### Short description:
 
@@ -150,7 +180,7 @@ OpenCV, the Open Source Computer Vision Library includes state of the art comput
 
 ### Long Description:
 
-OpenCV, the Open Source Computer Vision Library includes state of the art computer vision and deep learning algorithms (including running deep networks) and apps. It is professionally coded and optimized. It can be used in C++, Python, javascipt, Cuda, OpenCL and Matlab. It runs on: Android, iOS, Windows, Linux and MacOS and many embedded implementations such as Raspberry Pi.
+OpenCV, the Open Source Computer Vision Library includes state of the art computer vision and deep learning algorithms (including running deep networks) and apps. It is professionally coded and optimized. It can be used in C++, Python, javascipt, Julia, Cuda, OpenCL and Matlab. It runs on: Android, iOS, Windows, Linux and MacOS and many embedded implementations such as Raspberry Pi, Movidius, and RISC-V.
 
 - The user site is at https://opencv.org/
 - The developer site is at: https://github.com/opencv/opencv/wiki
@@ -161,28 +191,15 @@ OpenCV, the Open Source Computer Vision Library includes state of the art comput
     - opencv_extra (extra data and code samples): https://github.com/opencv/opencv_extra
     - downloads for various OS and mobile devices: https://opencv.org/releases.html
 
-It is also useful to look at the change log: https://github.com/opencv/opencv/wiki/ChangeLog and instructions to install on various platforms: https://docs.opencv.org/3.3.1/df/d65/tutorial_table_of_content_introduction.html
+It is also useful to look at the change log: https://github.com/opencv/opencv/wiki/ChangeLog and instructions to install on various platforms: https://docs.opencv.org/master/df/d65/tutorial_table_of_content_introduction.html
 
-Please see our videos for the past several years of GSoC contributions: (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
+Please see our videos for the past several years of GSoC contributions: (2020: https://youtu.be/9dAMAvh2Em4) (2017: https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html) (2015: https://youtu.be/OUbUFn71S4s) (2014: https://youtu.be/3f76HCHJJRA) (2013: https://youtu.be/_TTtN4frMEA).
 
 There are many books on OpenCV, google: books opencv
 
 ### Application Instructions:
 
-1.  You **must** already know how to program fluently in C++ (or Python if applicable)
-    - See https://github.com/opencv/opencv/wiki/GSoC_2019#for-students-interested-in-applying for details.
-2.  Ask to join the opencv-gsoc mailing list https://groups.google.com/forum/#!forum/opencv-gsoc-2020
-    - Discuss project ideas from https://github.com/opencv/opencv/wiki/GSoC_2020#opencv-project-ideas-list or your own ideas with OpenCV mentors on the list.
-    - Proposals must follow: https://google.github.io/gsocguides/mentor/defining-a-project-ideas-list
-3.  Sign up with GSoC and with OpenCV
-4.  When (and if!) OpenCV gets accepted as GSoC org this year, and we are told how many slots we will get **and** you've signed up for a project with us, **Then:**
-    - We will weigh the students and projects against the mentors we gather and the mentor's interests and choose which students/project to pursue.
-    - Accepted students will be posted on the GSoC site  and we will notify the accepted students ourselves afterwards.
-
-* Please only propose projects that you already know how to do. 
-     - It is impossible for a mentor to train you in how to do the task while helping you do it. 
-     - Mentors exist to keep you on track, and ensure good code, but not to teach you a new area of vision, AI. To improve your coding but not teach you a language.
-     - Documentation, tests and tutorial are as vital as the code. We'd rather have rougher code then miss these items because if these are not in place, your code will be useless to everyone.
+Please see https://opencv.org/google-summer-of-code-internship/
 
 ### Proposal Tags
 
@@ -216,7 +233,7 @@ https://github.com/opencv/opencv/wiki/GSoC_2020
 
 ### Mailing list?
 
-https://groups.yahoo.com/neo/groups/OpenCV/info
+https://opencv.org/subscribe
 
 https://forum.opencv.org/
 
