@@ -59,4 +59,16 @@ Links: [Green's Theorem](http://en.wikipedia.org/wiki/Green's_theorem)
 
 # DNN
 
-TBD
+**Q**: _Cannot read frozen object detection ``.pb`` with OpenCV DNN API after it was trained with TF Object Detection API. What is the reason?_
+**A**: TF Object Detection API provides opportunities for detection model training. There are scripts for TF2, TF1.5 training and further model export, namely ``model_main_tf2.py`` and ``exporter_main_v2.py``, ``model_main.py`` and ``export_inference_graph.py``. After ``exporter_main_v2.py`` execution the model, checkpoints and variables will be saved in the specified directory. Observing this model after freezing, you will find ``StatefulPartitionedCall/...`` nodes. It indicates TF Eager Mode, which is not supported in OpenCV.
+<br>One of the options is using TF1.5 scripts: ``model_main.py`` and ``export_inference_graph.py``.</br>
+
+**Discussion:** [#19257](https://github.com/opencv/opencv/issues/19257) 
+
+**Q**: _Is there control flow support in OpenCV?_
+**A**: OpenCV doesn't support control flow and currently, there is no plan for the near future to implement it.
+<br>Error example:</br>
+```onnx_graph_simplifier.cpp:592: error: (-210:Unsupported format or combination of formats) Unsupported data type: BOOL in function 'getMatFromTensor'```
+<br>The problem appeared during ``.onnx`` feeding into ``cv2.dnn.readNetFromONNX(...)``.</br>
+
+**Discussion:** [#19366](https://github.com/opencv/opencv/issues/19366)
