@@ -72,3 +72,11 @@ Links: [Green's Theorem](http://en.wikipedia.org/wiki/Green's_theorem)
 ```onnx_graph_simplifier.cpp:592: error: (-210:Unsupported format or combination of formats) Unsupported data type: BOOL in function 'getMatFromTensor'```
 <br>The problem appeared during ``.onnx`` feeding into ``cv2.dnn.readNetFromONNX(...)``.</br>
 <br>**Discussion:** [#19366](https://github.com/opencv/opencv/issues/19366)</br>
+
+# Python Bindings
+
+**Q**: _I call OpenCV function as it's done in C++ or stated in documentation, but get some strange data type or buffer size exception. How to debug it?_
+
+**A**: OpenCV Bindings for Python use Numpy Array as base container instead or wrapping `cv::Mat` to Python. Data conversion is done on-the-go in C++ during function call. Some of conversions could be buggy or counterintuitive. OpenCV provides function `cv.utils.dumpInputArray()` that returns details of C++ representation of Python arrays that can help.  
+
+**Documentation:** [#16807](https://github.com/opencv/opencv/issues/16807) [#19091](https://github.com/opencv/opencv/issues/19091), [#17456](https://github.com/opencv/opencv/issues/17456)
