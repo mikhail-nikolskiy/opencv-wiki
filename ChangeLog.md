@@ -22,7 +22,7 @@ New Year's update for OpenCV 4.x has been released.
 
     - High Level API and Samples for Scene Text Detection and Recognition ([#17570](https://github.com/opencv/opencv/pull/17570)). The samples use the algorithms and the separately downloaded pre-trained models introduced in the following papers:
        - _"Real-time Scene Text Detection with Differentiable Binarization"_. Liao, Minghui and Wan, Zhaoyi and Yao, Cong and Chen, Kai and Bai, Xiang. Proc. AAAI, 2020.
-       - _"An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition"_. Shi, Baoguang and Bai, Xiang and Yao, Cong. EEE transactions on pattern analysis and machine intelligence, 2016.
+       - _"An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition"_. Shi, Baoguang and Bai, Xiang and Yao, Cong. IEEE transactions on pattern analysis and machine intelligence, 2016.
 
 
     - SIFT: SIMD optimization of GaussianBlur 16U ([#18983](https://github.com/opencv/opencv/pull/18983))
