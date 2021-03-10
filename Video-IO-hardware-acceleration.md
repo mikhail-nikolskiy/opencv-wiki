@@ -62,9 +62,11 @@ To properly utilize hardware capabilities there are several low-level API/SDKs u
 
 - [Intel® Media SDK](https://software.intel.com/en-us/media-sdk) provides an API to access hardware-accelerated video decode, encode and filtering on Intel® platforms with integrated graphics. [oneVPL](https://spec.oneapi.com/versions/latest/elements/oneVPL/source/index.html) (oneAPI Video Processing Library) is an evolution of Intel Media SDK.
 
-- [NVIDIA Video Codec SDK](https://developer.nvidia.com/nvidia-video-codec-sdk). [Video Decode and Presentation API for Unix](https://www.freedesktop.org/wiki/Software/VDPAU/) (VDPAU) is an open source library and API to offload portions of the video decoding process and video post-processing to the GPU video-hardware, developed by NVIDIA.
+- [NVIDIA Video Codec SDK](https://developer.nvidia.com/nvidia-video-codec-sdk) is a NVIDIA proprietary library for hardware-accelerated video decode/encode on CUDA-compatible GPUs.
 
-- [AMD Video Core Next](https://en.wikipedia.org/wiki/Video_Core_Next)
+- [Video Decode and Presentation API for Unix](https://www.freedesktop.org/wiki/Software/VDPAU/) (VDPAU) is an open source library and API to offload portions of the video decoding process and video post-processing to the GPU video-hardware, developed by NVIDIA.
+
+- [AMD AMF](https://gpuopen.com/advanced-media-framework/)
 
 - others APIs/SDK from hardware vendors
 
@@ -74,9 +76,9 @@ Installation guidelines for some Best Known Configurations (BKC) are described b
 Current HW acceleration types support matrix, in priority order:
 OS | Backend | VideoCapture | VideoWriter
 -- | -- | -- | --
-Linux | FFMPEG | VAAPI, MFX | MFX, VAAPI
+Linux | FFMPEG | VAAPI | MFX, VAAPI
   | GStreamer | VAAPI (and others HW plugins) | VAAPI (and others HW plugins)
-Windows | FFMPEG | D3D11, MFX | MFX
+Windows | FFMPEG | D3D11 | MFX
   | MSMF | D3D11 | -
 
 
@@ -146,9 +148,11 @@ You should see these entries in CMake summary log:
 --     GStreamer:                   YES (1.16.2)
 ```
 
-Install runtime drivers for Intel hardware:
-- Intel Media VAAPI Driver: `apt-get install intel-media-va-driver`
-- (optional) Intel Media VAAPI Driver (non-free, with extra encoders support): `apt-get install intel-media-va-driver-non-free`
+Install full-feature VAAPI driver for Intel hardware:
+```
+apt-get install intel-media-va-driver-non-free
+```
+This package installs VAAPI driver with support for both HW decode and encode, and automatically uninstalls package 'intel-media-va-driver' (which supports HW decode only) if was installed previously as dependency of other packages.
 
 Correct installation should output something like this for `vainfo` call (CPU: Intel i5-6600 (Skylake)):
 
@@ -189,7 +193,7 @@ vainfo: Supported profile and entrypoints
       VAProfileHEVCMain               :	VAEntrypointFEI
 ```
 
-**Note**: There are several VAAPI drivers for Intel hardware: `i965` and `iHD`. There is strong reccomendation to use `iHD` version (mandatory for modern hardware).
+**Note**: There are several VAAPI drivers for Intel hardware: `i965` and `iHD`. There is strong recommendation to use `iHD` version (mandatory for modern hardware).
 
 
 ### Installation BKC on Windows
@@ -200,7 +204,16 @@ Dedicated SDKs may be required if you want to rebuild customized versions of FFm
 
 _This section is not complete_
 
-
+## Environment variables
+Environment variable `OPENCV_FFMPEG_CAPTURE_OPTIONS` allows to experiment with acceleration types other than D3D11VA/VAAPI/MFX in VideoCapture/VideoWriter APIs with FFMPEG backend implementation. For example, to use VAAPI and VDPAU acceleration (in priority order) in VideoCapture, open VideoCapture with parameters '{ CAP_PROP_HW_ACCELERATION, VIDEO_ACCELERATION_ANY }' and set environment variable
+```
+OPENCV_FFMPEG_CAPTURE_OPTIONS="hw_decoders_any;vaapi,vdpau"
+```
+To use NVENC/CUDA acceleration in VideoWriter, open VideoWriter with parameters '{ VIDEOWRITER_PROP_HW_ACCELERATION, VIDEO_ACCELERATION_ANY }' and set environment variable
+```
+OPENCV_FFMPEG_WRITER_OPTIONS="hw_encoders_any;cuda"
+```
+Acceleration naming in these environment variables follows [FFMpeg convension](https://github.com/FFmpeg/FFmpeg/blob/master/libavutil/hwcontext.c#L68).
 
 ## Samples and benchmarks
 
